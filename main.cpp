@@ -1,8 +1,10 @@
 #include <iostream>
+#include <memory>
+#include "Game.h"
 
 
 int main() {
-
-    std::cout << "Hello, World!" << std::endl;
+    std::unique_ptr<Game> game;
+    game->Start();
     return 0;
 }

@@ -1,0 +1,4 @@
+"C:\Program Files\CMake_3_24\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" C:\Users\DonEn\Documents\GitHub\SnakeGameCPP
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw

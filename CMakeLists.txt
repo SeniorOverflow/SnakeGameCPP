@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.20)
 project(SnakeGameCPP)
 
 set(CMAKE_CXX_STANDARD 20)
 
-find_package(SDL2)
+link_directories("/libs/SDL")
 add_executable(SnakeGameCPP main.cpp
         Apple.h
         Apple.cpp
@@ -15,3 +15,5 @@ add_executable(SnakeGameCPP main.cpp
         Food.h
         )
 
+
+target_link_libraries(SnakeGameCPP SDL2.dll)

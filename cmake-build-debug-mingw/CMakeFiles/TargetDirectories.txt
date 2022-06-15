@@ -1,0 +1,3 @@
+C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir
+C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
