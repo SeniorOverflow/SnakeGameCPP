@@ -9,11 +9,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Apple.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Apple.cpp.obj"
+  "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Enemy.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.obj"
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Food.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj"
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Game.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Game.cpp.obj"
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/IGameObject.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/IGameObject.cpp.obj"
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Level.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Level.cpp.obj"
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Snake.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj"
+  "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Spawner.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.obj"
+  "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Trigger.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.obj"
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/main.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

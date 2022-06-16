@@ -90,6 +90,12 @@
 		<Unit filename="C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Apple.h">
 			<Option target="SnakeGameCPP"/>
 		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Enemy.cpp">
+			<Option target="SnakeGameCPP"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Enemy.h">
+			<Option target="SnakeGameCPP"/>
+		</Unit>
 		<Unit filename="C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Food.cpp">
 			<Option target="SnakeGameCPP"/>
 		</Unit>
@@ -121,6 +127,18 @@
 			<Option target="SnakeGameCPP"/>
 		</Unit>
 		<Unit filename="C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Snake.h">
+			<Option target="SnakeGameCPP"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Spawner.cpp">
+			<Option target="SnakeGameCPP"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Spawner.h">
+			<Option target="SnakeGameCPP"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Trigger.cpp">
+			<Option target="SnakeGameCPP"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Trigger.h">
 			<Option target="SnakeGameCPP"/>
 		</Unit>
 		<Unit filename="C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/main.cpp">

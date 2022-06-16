@@ -4,6 +4,61 @@
 CMakeFiles/SnakeGameCPP.dir/Apple.cpp.obj: \
  ../Apple.cpp \
  ../Apple.h
+CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.obj: \
+ ../libs/SDL2/include/SDL2/SDL.h \
+ ../libs/SDL2/include/SDL2/SDL_assert.h \
+ ../libs/SDL2/include/SDL2/SDL_atomic.h \
+ ../libs/SDL2/include/SDL2/SDL_audio.h \
+ ../libs/SDL2/include/SDL2/SDL_blendmode.h \
+ ../libs/SDL2/include/SDL2/SDL_clipboard.h \
+ ../libs/SDL2/include/SDL2/SDL_config.h \
+ ../libs/SDL2/include/SDL2/SDL_cpuinfo.h \
+ ../libs/SDL2/include/SDL2/SDL_endian.h \
+ ../libs/SDL2/include/SDL2/SDL_error.h \
+ ../libs/SDL2/include/SDL2/SDL_events.h \
+ ../libs/SDL2/include/SDL2/SDL_filesystem.h \
+ ../libs/SDL2/include/SDL2/SDL_gamecontroller.h \
+ ../libs/SDL2/include/SDL2/SDL_gesture.h \
+ ../libs/SDL2/include/SDL2/SDL_haptic.h \
+ ../libs/SDL2/include/SDL2/SDL_hidapi.h \
+ ../libs/SDL2/include/SDL2/SDL_hints.h \
+ ../libs/SDL2/include/SDL2/SDL_joystick.h \
+ ../libs/SDL2/include/SDL2/SDL_keyboard.h \
+ ../libs/SDL2/include/SDL2/SDL_keycode.h \
+ ../libs/SDL2/include/SDL2/SDL_loadso.h \
+ ../libs/SDL2/include/SDL2/SDL_locale.h \
+ ../libs/SDL2/include/SDL2/SDL_log.h \
+ ../libs/SDL2/include/SDL2/SDL_main.h \
+ ../libs/SDL2/include/SDL2/SDL_messagebox.h \
+ ../libs/SDL2/include/SDL2/SDL_metal.h \
+ ../libs/SDL2/include/SDL2/SDL_misc.h \
+ ../libs/SDL2/include/SDL2/SDL_mouse.h \
+ ../libs/SDL2/include/SDL2/SDL_mutex.h \
+ ../libs/SDL2/include/SDL2/SDL_pixels.h \
+ ../libs/SDL2/include/SDL2/SDL_platform.h \
+ ../libs/SDL2/include/SDL2/SDL_power.h \
+ ../libs/SDL2/include/SDL2/SDL_quit.h \
+ ../libs/SDL2/include/SDL2/SDL_rect.h \
+ ../libs/SDL2/include/SDL2/SDL_render.h \
+ ../libs/SDL2/include/SDL2/SDL_rwops.h \
+ ../libs/SDL2/include/SDL2/SDL_scancode.h \
+ ../libs/SDL2/include/SDL2/SDL_sensor.h \
+ ../libs/SDL2/include/SDL2/SDL_shape.h \
+ ../libs/SDL2/include/SDL2/SDL_stdinc.h \
+ ../libs/SDL2/include/SDL2/SDL_surface.h \
+ ../libs/SDL2/include/SDL2/SDL_system.h \
+ ../libs/SDL2/include/SDL2/SDL_thread.h \
+ ../libs/SDL2/include/SDL2/SDL_timer.h \
+ ../libs/SDL2/include/SDL2/SDL_touch.h \
+ ../libs/SDL2/include/SDL2/SDL_version.h \
+ ../libs/SDL2/include/SDL2/SDL_video.h \
+ ../libs/SDL2/include/SDL2/begin_code.h \
+ ../libs/SDL2/include/SDL2/close_code.h \
+ ../Enemy.cpp \
+ ../Enemy.h \
+ ../GameTypes.h \
+ ../IGameObject.h \
+ ../Trigger.h
 CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj: \
  ../libs/SDL2/include/SDL2/SDL.h \
  ../libs/SDL2/include/SDL2/SDL_assert.h \
@@ -56,7 +111,9 @@ CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj: \
  ../libs/SDL2/include/SDL2/close_code.h \
  ../Food.cpp \
  ../Food.h \
- ../IGameObject.h
+ ../GameTypes.h \
+ ../IGameObject.h \
+ ../Trigger.h
 CMakeFiles/SnakeGameCPP.dir/Game.cpp.obj: \
  ../libs/SDL2/include/SDL2/SDL.h \
  ../libs/SDL2/include/SDL2/SDL_assert.h \
@@ -115,7 +172,9 @@ CMakeFiles/SnakeGameCPP.dir/Game.cpp.obj: \
  ../IGameObject.h \
  ../IPlayer.h \
  ../Level.h \
- ../Snake.h
+ ../Snake.h \
+ ../Spawner.h \
+ ../Trigger.h
 CMakeFiles/SnakeGameCPP.dir/IGameObject.cpp.obj: \
  ../libs/SDL2/include/SDL2/SDL.h \
  ../libs/SDL2/include/SDL2/SDL_assert.h \
@@ -222,8 +281,12 @@ CMakeFiles/SnakeGameCPP.dir/Level.cpp.obj: \
  ../Food.h \
  ../GameTypes.h \
  ../IGameObject.h \
+ ../IPlayer.h \
  ../Level.cpp \
- ../Level.h
+ ../Level.h \
+ ../Snake.h \
+ ../Spawner.h \
+ ../Trigger.h
 CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj: \
  ../libs/SDL2/include/SDL2/SDL.h \
  ../libs/SDL2/include/SDL2/SDL_assert.h \
@@ -278,7 +341,120 @@ CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj: \
  ../IGameObject.h \
  ../IPlayer.h \
  ../Snake.cpp \
- ../Snake.h
+ ../Snake.h \
+ ../Trigger.h
+CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.obj: \
+ ../libs/SDL2/include/SDL2/SDL.h \
+ ../libs/SDL2/include/SDL2/SDL_assert.h \
+ ../libs/SDL2/include/SDL2/SDL_atomic.h \
+ ../libs/SDL2/include/SDL2/SDL_audio.h \
+ ../libs/SDL2/include/SDL2/SDL_blendmode.h \
+ ../libs/SDL2/include/SDL2/SDL_clipboard.h \
+ ../libs/SDL2/include/SDL2/SDL_config.h \
+ ../libs/SDL2/include/SDL2/SDL_cpuinfo.h \
+ ../libs/SDL2/include/SDL2/SDL_endian.h \
+ ../libs/SDL2/include/SDL2/SDL_error.h \
+ ../libs/SDL2/include/SDL2/SDL_events.h \
+ ../libs/SDL2/include/SDL2/SDL_filesystem.h \
+ ../libs/SDL2/include/SDL2/SDL_gamecontroller.h \
+ ../libs/SDL2/include/SDL2/SDL_gesture.h \
+ ../libs/SDL2/include/SDL2/SDL_haptic.h \
+ ../libs/SDL2/include/SDL2/SDL_hidapi.h \
+ ../libs/SDL2/include/SDL2/SDL_hints.h \
+ ../libs/SDL2/include/SDL2/SDL_joystick.h \
+ ../libs/SDL2/include/SDL2/SDL_keyboard.h \
+ ../libs/SDL2/include/SDL2/SDL_keycode.h \
+ ../libs/SDL2/include/SDL2/SDL_loadso.h \
+ ../libs/SDL2/include/SDL2/SDL_locale.h \
+ ../libs/SDL2/include/SDL2/SDL_log.h \
+ ../libs/SDL2/include/SDL2/SDL_main.h \
+ ../libs/SDL2/include/SDL2/SDL_messagebox.h \
+ ../libs/SDL2/include/SDL2/SDL_metal.h \
+ ../libs/SDL2/include/SDL2/SDL_misc.h \
+ ../libs/SDL2/include/SDL2/SDL_mouse.h \
+ ../libs/SDL2/include/SDL2/SDL_mutex.h \
+ ../libs/SDL2/include/SDL2/SDL_pixels.h \
+ ../libs/SDL2/include/SDL2/SDL_platform.h \
+ ../libs/SDL2/include/SDL2/SDL_power.h \
+ ../libs/SDL2/include/SDL2/SDL_quit.h \
+ ../libs/SDL2/include/SDL2/SDL_rect.h \
+ ../libs/SDL2/include/SDL2/SDL_render.h \
+ ../libs/SDL2/include/SDL2/SDL_rwops.h \
+ ../libs/SDL2/include/SDL2/SDL_scancode.h \
+ ../libs/SDL2/include/SDL2/SDL_sensor.h \
+ ../libs/SDL2/include/SDL2/SDL_shape.h \
+ ../libs/SDL2/include/SDL2/SDL_stdinc.h \
+ ../libs/SDL2/include/SDL2/SDL_surface.h \
+ ../libs/SDL2/include/SDL2/SDL_system.h \
+ ../libs/SDL2/include/SDL2/SDL_thread.h \
+ ../libs/SDL2/include/SDL2/SDL_timer.h \
+ ../libs/SDL2/include/SDL2/SDL_touch.h \
+ ../libs/SDL2/include/SDL2/SDL_version.h \
+ ../libs/SDL2/include/SDL2/SDL_video.h \
+ ../libs/SDL2/include/SDL2/begin_code.h \
+ ../libs/SDL2/include/SDL2/close_code.h \
+ ../Enemy.h \
+ ../Food.h \
+ ../GameTypes.h \
+ ../IGameObject.h \
+ ../IPlayer.h \
+ ../Snake.h \
+ ../Spawner.cpp \
+ ../Spawner.h \
+ ../Trigger.h
+CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.obj: \
+ ../libs/SDL2/include/SDL2/SDL.h \
+ ../libs/SDL2/include/SDL2/SDL_assert.h \
+ ../libs/SDL2/include/SDL2/SDL_atomic.h \
+ ../libs/SDL2/include/SDL2/SDL_audio.h \
+ ../libs/SDL2/include/SDL2/SDL_blendmode.h \
+ ../libs/SDL2/include/SDL2/SDL_clipboard.h \
+ ../libs/SDL2/include/SDL2/SDL_config.h \
+ ../libs/SDL2/include/SDL2/SDL_cpuinfo.h \
+ ../libs/SDL2/include/SDL2/SDL_endian.h \
+ ../libs/SDL2/include/SDL2/SDL_error.h \
+ ../libs/SDL2/include/SDL2/SDL_events.h \
+ ../libs/SDL2/include/SDL2/SDL_filesystem.h \
+ ../libs/SDL2/include/SDL2/SDL_gamecontroller.h \
+ ../libs/SDL2/include/SDL2/SDL_gesture.h \
+ ../libs/SDL2/include/SDL2/SDL_haptic.h \
+ ../libs/SDL2/include/SDL2/SDL_hidapi.h \
+ ../libs/SDL2/include/SDL2/SDL_hints.h \
+ ../libs/SDL2/include/SDL2/SDL_joystick.h \
+ ../libs/SDL2/include/SDL2/SDL_keyboard.h \
+ ../libs/SDL2/include/SDL2/SDL_keycode.h \
+ ../libs/SDL2/include/SDL2/SDL_loadso.h \
+ ../libs/SDL2/include/SDL2/SDL_locale.h \
+ ../libs/SDL2/include/SDL2/SDL_log.h \
+ ../libs/SDL2/include/SDL2/SDL_main.h \
+ ../libs/SDL2/include/SDL2/SDL_messagebox.h \
+ ../libs/SDL2/include/SDL2/SDL_metal.h \
+ ../libs/SDL2/include/SDL2/SDL_misc.h \
+ ../libs/SDL2/include/SDL2/SDL_mouse.h \
+ ../libs/SDL2/include/SDL2/SDL_mutex.h \
+ ../libs/SDL2/include/SDL2/SDL_pixels.h \
+ ../libs/SDL2/include/SDL2/SDL_platform.h \
+ ../libs/SDL2/include/SDL2/SDL_power.h \
+ ../libs/SDL2/include/SDL2/SDL_quit.h \
+ ../libs/SDL2/include/SDL2/SDL_rect.h \
+ ../libs/SDL2/include/SDL2/SDL_render.h \
+ ../libs/SDL2/include/SDL2/SDL_rwops.h \
+ ../libs/SDL2/include/SDL2/SDL_scancode.h \
+ ../libs/SDL2/include/SDL2/SDL_sensor.h \
+ ../libs/SDL2/include/SDL2/SDL_shape.h \
+ ../libs/SDL2/include/SDL2/SDL_stdinc.h \
+ ../libs/SDL2/include/SDL2/SDL_surface.h \
+ ../libs/SDL2/include/SDL2/SDL_system.h \
+ ../libs/SDL2/include/SDL2/SDL_thread.h \
+ ../libs/SDL2/include/SDL2/SDL_timer.h \
+ ../libs/SDL2/include/SDL2/SDL_touch.h \
+ ../libs/SDL2/include/SDL2/SDL_version.h \
+ ../libs/SDL2/include/SDL2/SDL_video.h \
+ ../libs/SDL2/include/SDL2/begin_code.h \
+ ../libs/SDL2/include/SDL2/close_code.h \
+ ../GameTypes.h \
+ ../Trigger.cpp \
+ ../Trigger.h
 CMakeFiles/SnakeGameCPP.dir/main.cpp.obj: \
  ../libs/SDL2/include/SDL2/SDL.h \
  ../libs/SDL2/include/SDL2/SDL_assert.h \
@@ -337,4 +513,6 @@ CMakeFiles/SnakeGameCPP.dir/main.cpp.obj: \
  ../IPlayer.h \
  ../Level.h \
  ../Snake.h \
+ ../Spawner.h \
+ ../Trigger.h \
  ../main.cpp

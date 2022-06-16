@@ -8,12 +8,15 @@
 #include "Food.h"
 #include "Enemy.h"
 #include <string>
+#include <tuple>
+#include "Spawner.h"
 
 class Level {
 public:
     virtual std::string GetDifficultyName() = 0;
-    virtual std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> getGameObjects() = 0;
+    virtual  std::tuple<std::vector<Food*>, std::vector<Enemy*>> getGameObjects()  = 0;
     virtual  ~Level() {};
+
 protected:
     std::vector<std::unique_ptr<Food>> m_foods;
     std::vector<std::unique_ptr<Enemy>> m_enemies;
@@ -25,32 +28,32 @@ protected:
 class VeryLowLevel : public Level {
 public:
     std::string GetDifficultyName() override;
-    std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> getGameObjects() override;
+    std::tuple<std::vector<Food*>, std::vector<Enemy*>> getGameObjects() override ;
 };
 
 
 class LowLevel : public Level {
 public:
     std::string GetDifficultyName() override ;
-     std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> getGameObjects() override ;
+     std::tuple<std::vector<Food*>, std::vector<Enemy*>> getGameObjects() override ;
 };
 
 class MiddleLevel : public Level {
 public:
     std::string GetDifficultyName() override ;
-      std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> getGameObjects() override ;
+    std::tuple<std::vector<Food*>, std::vector<Enemy*>> getGameObjects() override ;
 };
 
 class HardLevel : public Level {
 public:
     std::string GetDifficultyName() override;
-     std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> getGameObjects() override ;
+    std::tuple<std::vector<Food*>, std::vector<Enemy*>> getGameObjects() override ;
 };
 
 class NightmareLevel : public Level {
 public:
     std::string GetDifficultyName() override;
-    std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> getGameObjects() override ;
+    std::tuple<std::vector<Food*>, std::vector<Enemy*>> getGameObjects() override ;
 };
 
 

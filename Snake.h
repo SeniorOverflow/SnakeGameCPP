@@ -6,12 +6,13 @@
 #include "GameTypes.h"
 #include <tuple>
 #include <iostream>
+#include "Trigger.h"
 
 
 class SnakeBody : IPlayer , IGameObject
 {
 public:
-    SnakeBody(Color, int x, int  y ,  int w ,  int h  );
+    SnakeBody( int x, int  y ,  int w ,  int h  );
     void setPos(int posX, int posY);
     std::tuple<int, int> getPos();
     void Move(int verticalDirection, int horizontalDirection);

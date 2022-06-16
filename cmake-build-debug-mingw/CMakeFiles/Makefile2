@@ -80,12 +80,12 @@ clean: CMakeFiles/SnakeGameCPP.dir/clean
 CMakeFiles/SnakeGameCPP.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target SnakeGameCPP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target SnakeGameCPP"
 .PHONY : CMakeFiles/SnakeGameCPP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SnakeGameCPP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SnakeGameCPP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles 0
 .PHONY : CMakeFiles/SnakeGameCPP.dir/rule

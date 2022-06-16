@@ -1,30 +1,65 @@
 #pragma once 
 #include <memory>
 #include "IGameObject.h"
+#include "Trigger.h"
 
-class Food : IGameObject
+class Food
 {
 public:
-    virtual Food *  getFood() = 0;
-    virtual  ~Food() {};
+    virtual std::string getName() = 0;
+    virtual SDL_Rect &GetGameObjectRect()  = 0;
+    virtual Color getColor() = 0;
+    virtual void setPos(int  posX , int posY) = 0;
+    virtual  ~Food() {}
+    static Food *  getFood(FoodType foodType);
+
 };
 
-class Apple : Food
+class Apple : public Food
 {
-    Food * getFood();
+public:
+    std::string getName() override;
+    SDL_Rect &GetGameObjectRect() override;
+    void setPos(int  posX , int posY) override;
+    Color getColor() override;
+private:
+    Color color {150,100,100};
+    SDL_Rect body{0,0,5,5};
 };
 
-class Raspberry: Food
+class Raspberry: public Food
 {
-    Food * getFood();
+public:
+    std::string getName() override;
+    SDL_Rect &GetGameObjectRect() override;
+    void setPos(int  posX , int posY) override;
+    Color getColor() override;
+private:
+    Color color{100,100,100};
+    SDL_Rect body{0,0,5,5};
+
 };
 
-class Orange: Food
+class Orange: public Food
 {
-    Food * getFood();
+public:
+    std::string getName() override;
+    SDL_Rect &GetGameObjectRect() override;
+    void setPos(int  posX , int posY) override;
+    Color getColor() override;
+private:
+    Color color{50,100,100};
+    SDL_Rect body{0,0,5,5};
 };
 
-class Pie: Food
+class Pie: public Food
 {
-    Food * getFood();
+public:
+    std::string getName() override;
+    SDL_Rect &GetGameObjectRect() override;
+    void setPos(int  posX , int posY) override;
+    Color getColor() override;
+private:
+    Color color{200,100,100};
+    SDL_Rect body{0,0,5,5};
 };

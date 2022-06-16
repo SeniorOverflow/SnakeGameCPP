@@ -152,6 +152,30 @@ Apple.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Apple.cpp.s
 .PHONY : Apple.cpp.s
 
+Enemy.obj: Enemy.cpp.obj
+.PHONY : Enemy.obj
+
+# target to build an object file
+Enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.obj
+.PHONY : Enemy.cpp.obj
+
+Enemy.i: Enemy.cpp.i
+.PHONY : Enemy.i
+
+# target to preprocess a source file
+Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.i
+.PHONY : Enemy.cpp.i
+
+Enemy.s: Enemy.cpp.s
+.PHONY : Enemy.s
+
+# target to generate assembly for a file
+Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.s
+.PHONY : Enemy.cpp.s
+
 Food.obj: Food.cpp.obj
 .PHONY : Food.obj
 
@@ -272,6 +296,54 @@ Snake.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Snake.cpp.s
 .PHONY : Snake.cpp.s
 
+Spawner.obj: Spawner.cpp.obj
+.PHONY : Spawner.obj
+
+# target to build an object file
+Spawner.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.obj
+.PHONY : Spawner.cpp.obj
+
+Spawner.i: Spawner.cpp.i
+.PHONY : Spawner.i
+
+# target to preprocess a source file
+Spawner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.i
+.PHONY : Spawner.cpp.i
+
+Spawner.s: Spawner.cpp.s
+.PHONY : Spawner.s
+
+# target to generate assembly for a file
+Spawner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.s
+.PHONY : Spawner.cpp.s
+
+Trigger.obj: Trigger.cpp.obj
+.PHONY : Trigger.obj
+
+# target to build an object file
+Trigger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.obj
+.PHONY : Trigger.cpp.obj
+
+Trigger.i: Trigger.cpp.i
+.PHONY : Trigger.i
+
+# target to preprocess a source file
+Trigger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.i
+.PHONY : Trigger.cpp.i
+
+Trigger.s: Trigger.cpp.s
+.PHONY : Trigger.s
+
+# target to generate assembly for a file
+Trigger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeGameCPP.dir\build.make CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.s
+.PHONY : Trigger.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -308,6 +380,9 @@ help:
 	@echo ... Apple.obj
 	@echo ... Apple.i
 	@echo ... Apple.s
+	@echo ... Enemy.obj
+	@echo ... Enemy.i
+	@echo ... Enemy.s
 	@echo ... Food.obj
 	@echo ... Food.i
 	@echo ... Food.s
@@ -323,6 +398,12 @@ help:
 	@echo ... Snake.obj
 	@echo ... Snake.i
 	@echo ... Snake.s
+	@echo ... Spawner.obj
+	@echo ... Spawner.i
+	@echo ... Spawner.s
+	@echo ... Trigger.obj
+	@echo ... Trigger.i
+	@echo ... Trigger.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

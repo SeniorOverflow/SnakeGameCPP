@@ -29,7 +29,7 @@ void SnakeBody::setPos(int posX, int posY)
     this->body.y = posY;
 }
 
-SnakeBody::SnakeBody(Color color, int x, int y , int w ,int  h)
+SnakeBody::SnakeBody( int x, int y , int w ,int  h)
 {
     this->body.w = w;
     this->body.h = h;
@@ -76,11 +76,11 @@ Snake::Snake() {
     color.GREEN = 124;
     color.BLUE = 124;
 
-    SnakeBody body(color, this->pos_x, this->pos_y, this->bodyWight, this->bodyHeight );
-    SnakeBody body2(color, this->pos_x, this->pos_y - 15, this->bodyWight, this->bodyHeight );
-    SnakeBody body3(color, this->pos_x, this->pos_y  - 30, this->bodyWight, this->bodyHeight );
-    SnakeBody body4(color, this->pos_x, this->pos_y - 45, this->bodyWight, this->bodyHeight );
-    SnakeBody body5(color, this->pos_x, this->pos_y - 60, this->bodyWight, this->bodyHeight );
+    SnakeBody body( this->pos_x, this->pos_y, this->bodyWight, this->bodyHeight );
+    SnakeBody body2( this->pos_x, this->pos_y - 15, this->bodyWight, this->bodyHeight );
+    SnakeBody body3( this->pos_x, this->pos_y  - 30, this->bodyWight, this->bodyHeight );
+    SnakeBody body4( this->pos_x, this->pos_y - 45, this->bodyWight, this->bodyHeight );
+    SnakeBody body5( this->pos_x, this->pos_y - 60, this->bodyWight, this->bodyHeight );
 
 
     this->m_snakeBody.push_back(body);

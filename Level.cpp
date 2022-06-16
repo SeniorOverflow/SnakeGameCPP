@@ -21,47 +21,64 @@ std::string NightmareLevel::GetDifficultyName() {
     return "NightmareLevel";
 }
 
-std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> VeryLowLevel::getGameObjects()
-{
-    std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> a ;
-    return a;
 
-}
 
-std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> LowLevel::getGameObjects()
-{
-    this->countEnemies = 20;
-    this->countFood = 100;
-    std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> a ;
-    return a;
-
-}
-
-std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> MiddleLevel::getGameObjects()
-{
-    this->countEnemies = 20;
-    this->countFood = 100;
-    std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> a ;
-    return a;
-
-}
-
-std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> HardLevel::getGameObjects()
-{
-    this->countEnemies = 20;
-    this->countFood = 100;
-    std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> a ;
-    return a;
-
-}
-
-std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> NightmareLevel::getGameObjects()
+std::tuple<std::vector<Food*>, std::vector<Enemy*>> VeryLowLevel::getGameObjects()
 {
     this->countEnemies = 20;
     this->countFood = 100;
 
+    auto enemies =  Spawner::CreateEnemy(countEnemies);
+    auto foods =  Spawner::CreateFood(countFood);
+
+
     std::tuple<std::vector<std::unique_ptr<Food>>, std::vector<std::unique_ptr<Enemy>>> a ;
-    return a;
+    return std::make_tuple(foods, enemies);
+
+}
+
+std::tuple<std::vector<Food*>, std::vector<Enemy*>> LowLevel::getGameObjects()
+{
+    this->countEnemies = 20;
+    this->countFood = 100;
+    auto enemies =  Spawner::CreateEnemy(countEnemies);
+    auto foods =  Spawner::CreateFood(countFood);
+
+    return std::make_tuple(foods, enemies);
+
+}
+
+std::tuple<std::vector<Food*>, std::vector<Enemy*>> MiddleLevel::getGameObjects()
+{
+    this->countEnemies = 20;
+    this->countFood = 100;
+    auto enemies =  Spawner::CreateEnemy(countEnemies);
+    auto foods =  Spawner::CreateFood(countFood);
+
+    return std::make_tuple(foods, enemies);
+
+}
+
+std::tuple<std::vector<Food*>, std::vector<Enemy*>> HardLevel::getGameObjects()
+{
+    this->countEnemies = 20;
+    this->countFood = 100;
+    auto enemies =  Spawner::CreateEnemy(countEnemies);
+    auto foods =  Spawner::CreateFood(countFood);
+   ;
+    return std::make_tuple(foods, enemies);
+
+}
+
+std::tuple<std::vector<Food*>, std::vector<Enemy*>> NightmareLevel::getGameObjects()
+{
+    this->countEnemies = 20;
+    this->countFood = 100;
+    auto enemies =  Spawner::CreateEnemy(countEnemies);
+    auto foods =  Spawner::CreateFood(countFood);
+
+
+    return std::make_tuple(foods, enemies);
 
 }
 

@@ -18,6 +18,8 @@ add_executable(SnakeGameCPP main.cpp
         IGameObject.h
         Apple.h
         Apple.cpp
+        Enemy.cpp
+        Enemy.h
         Food.cpp
         Food.h
         GameTypes.h
@@ -25,6 +27,10 @@ add_executable(SnakeGameCPP main.cpp
         Level.cpp
         Snake.cpp
         Snake.h
+        Trigger.cpp
+        Trigger.h
+        Spawner.cpp
+        Spawner.h
         )
 
 target_link_libraries(SnakeGameCPP  mingw32 SDL2main SDL2)

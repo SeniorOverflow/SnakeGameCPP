@@ -121,10 +121,24 @@ CMakeFiles/SnakeGameCPP.dir/Apple.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SnakeGameCPP.dir/Apple.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Apple.cpp -o CMakeFiles\SnakeGameCPP.dir\Apple.cpp.s
 
+CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.obj: CMakeFiles/SnakeGameCPP.dir/flags.make
+CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.obj: CMakeFiles/SnakeGameCPP.dir/includes_CXX.rsp
+CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.obj: ../Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SnakeGameCPP.dir\Enemy.cpp.obj -c C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Enemy.cpp
+
+CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Enemy.cpp > CMakeFiles\SnakeGameCPP.dir\Enemy.cpp.i
+
+CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Enemy.cpp -o CMakeFiles\SnakeGameCPP.dir\Enemy.cpp.s
+
 CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj: CMakeFiles/SnakeGameCPP.dir/flags.make
 CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj: CMakeFiles/SnakeGameCPP.dir/includes_CXX.rsp
 CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj: ../Food.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SnakeGameCPP.dir\Food.cpp.obj -c C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Food.cpp
 
 CMakeFiles/SnakeGameCPP.dir/Food.cpp.i: cmake_force
@@ -138,7 +152,7 @@ CMakeFiles/SnakeGameCPP.dir/Food.cpp.s: cmake_force
 CMakeFiles/SnakeGameCPP.dir/Level.cpp.obj: CMakeFiles/SnakeGameCPP.dir/flags.make
 CMakeFiles/SnakeGameCPP.dir/Level.cpp.obj: CMakeFiles/SnakeGameCPP.dir/includes_CXX.rsp
 CMakeFiles/SnakeGameCPP.dir/Level.cpp.obj: ../Level.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SnakeGameCPP.dir/Level.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SnakeGameCPP.dir/Level.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SnakeGameCPP.dir\Level.cpp.obj -c C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Level.cpp
 
 CMakeFiles/SnakeGameCPP.dir/Level.cpp.i: cmake_force
@@ -152,7 +166,7 @@ CMakeFiles/SnakeGameCPP.dir/Level.cpp.s: cmake_force
 CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj: CMakeFiles/SnakeGameCPP.dir/flags.make
 CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj: CMakeFiles/SnakeGameCPP.dir/includes_CXX.rsp
 CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj: ../Snake.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SnakeGameCPP.dir\Snake.cpp.obj -c C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Snake.cpp
 
 CMakeFiles/SnakeGameCPP.dir/Snake.cpp.i: cmake_force
@@ -163,15 +177,46 @@ CMakeFiles/SnakeGameCPP.dir/Snake.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SnakeGameCPP.dir/Snake.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Snake.cpp -o CMakeFiles\SnakeGameCPP.dir\Snake.cpp.s
 
+CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.obj: CMakeFiles/SnakeGameCPP.dir/flags.make
+CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.obj: CMakeFiles/SnakeGameCPP.dir/includes_CXX.rsp
+CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.obj: ../Trigger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SnakeGameCPP.dir\Trigger.cpp.obj -c C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Trigger.cpp
+
+CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Trigger.cpp > CMakeFiles\SnakeGameCPP.dir\Trigger.cpp.i
+
+CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Trigger.cpp -o CMakeFiles\SnakeGameCPP.dir\Trigger.cpp.s
+
+CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.obj: CMakeFiles/SnakeGameCPP.dir/flags.make
+CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.obj: CMakeFiles/SnakeGameCPP.dir/includes_CXX.rsp
+CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.obj: ../Spawner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SnakeGameCPP.dir\Spawner.cpp.obj -c C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Spawner.cpp
+
+CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Spawner.cpp > CMakeFiles\SnakeGameCPP.dir\Spawner.cpp.i
+
+CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\Spawner.cpp -o CMakeFiles\SnakeGameCPP.dir\Spawner.cpp.s
+
 # Object files for target SnakeGameCPP
 SnakeGameCPP_OBJECTS = \
 "CMakeFiles/SnakeGameCPP.dir/main.cpp.obj" \
 "CMakeFiles/SnakeGameCPP.dir/Game.cpp.obj" \
 "CMakeFiles/SnakeGameCPP.dir/IGameObject.cpp.obj" \
 "CMakeFiles/SnakeGameCPP.dir/Apple.cpp.obj" \
+"CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.obj" \
 "CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj" \
 "CMakeFiles/SnakeGameCPP.dir/Level.cpp.obj" \
-"CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj"
+"CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj" \
+"CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.obj" \
+"CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.obj"
 
 # External object files for target SnakeGameCPP
 SnakeGameCPP_EXTERNAL_OBJECTS =
@@ -180,14 +225,17 @@ SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/main.cpp.obj
 SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/Game.cpp.obj
 SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/IGameObject.cpp.obj
 SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/Apple.cpp.obj
+SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/Enemy.cpp.obj
 SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj
 SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/Level.cpp.obj
 SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj
+SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/Trigger.cpp.obj
+SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/Spawner.cpp.obj
 SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/build.make
 SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/linklibs.rsp
 SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/objects1.rsp
 SnakeGameCPP.exe: CMakeFiles/SnakeGameCPP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable SnakeGameCPP.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\DonEn\Documents\GitHub\SnakeGameCPP\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable SnakeGameCPP.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SnakeGameCPP.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
