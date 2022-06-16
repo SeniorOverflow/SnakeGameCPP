@@ -1,3 +1,0 @@
-/home/senioroverflow/Documents/GitHub/SnakeGameCPP/cmake-build-debug/CMakeFiles/SnakeGameCPP.dir
-/home/senioroverflow/Documents/GitHub/SnakeGameCPP/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/senioroverflow/Documents/GitHub/SnakeGameCPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir

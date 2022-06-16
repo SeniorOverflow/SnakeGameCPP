@@ -1,10 +1,8 @@
-#include <iostream>
 #include <memory>
 #include "Game.h"
 
-
-int main() {
-    std::unique_ptr<Game> game;
-    game->Start();
+int main(int argc, char* argv[]) {
+    Game * game = new Game();
+    game->Start(GameDifficulty::Middle);
     return 0;
 }

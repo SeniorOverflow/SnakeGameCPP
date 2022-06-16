@@ -1,11 +1,19 @@
-#pragma once 
+#pragma once
+
 
 
 enum class GameDifficulty
 {
-    veryLow,
-    low,
-    middle,
-    hard,
+    VeryLow,
+    Low,
+    Middle,
+    Hard,
     Nightmare
+};
+
+struct Color
+{
+    uint8_t RED;
+    uint8_t GREEN;
+    uint8_t BLUE;
 };

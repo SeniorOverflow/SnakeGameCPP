@@ -12,12 +12,16 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Food.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Food.cpp.obj"
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Game.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Game.cpp.obj"
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/IGameObject.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/IGameObject.cpp.obj"
+  "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Level.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Level.cpp.obj"
+  "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Snake.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/Snake.cpp.obj"
   "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/main.cpp" "C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/cmake-build-debug-mingw/CMakeFiles/SnakeGameCPP.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../libs/SDL2/bin"
+  "../libs/SDL2/include"
   )
 
 # The set of dependency files which are needed:
