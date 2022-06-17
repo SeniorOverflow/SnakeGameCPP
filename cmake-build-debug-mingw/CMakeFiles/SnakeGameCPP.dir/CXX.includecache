@@ -664,50 +664,6 @@ close_code.h
 
 ../libs/SDL2/include/SDL2/close_code.h
 
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Enemy.h
-IGameObject.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/IGameObject.h
-GameTypes.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/GameTypes.h
-string
--
-Trigger.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Trigger.h
-
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Food.h
-memory
--
-IGameObject.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/IGameObject.h
-Trigger.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Trigger.h
-
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Game.cpp
-Game.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Game.h
-
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Game.h
-vector
--
-iostream
--
-memory
--
-SDL2/SDL.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/SDL2/SDL.h
-Food.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Food.h
-Level.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Level.h
-Snake.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Snake.h
-Enemy.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Enemy.h
-GameTypes.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/GameTypes.h
-Spawner.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Spawner.h
-
 C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/GameTypes.h
 
 C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/IGameObject.h
@@ -718,25 +674,9 @@ C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/SDL2/SDL.h
 
 C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/IPlayer.h
 
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Level.h
-iostream
--
-vector
--
-GameTypes.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/GameTypes.h
-memory
--
-Food.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Food.h
-Enemy.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Enemy.h
-string
--
-tuple
--
-Spawner.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Spawner.h
+C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Snake.cpp
+Snake.h
+C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Snake.h
 
 C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Snake.h
 IPlayer.h
@@ -753,22 +693,6 @@ iostream
 -
 Trigger.h
 C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Trigger.h
-
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Spawner.h
-SDL2/SDL.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/SDL2/SDL.h
-vector
--
-Food.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Food.h
-Enemy.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Enemy.h
-Snake.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Snake.h
-GameTypes.h
-C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/GameTypes.h
-random
--
 
 C:/Users/DonEn/Documents/GitHub/SnakeGameCPP/Trigger.h
 SDL2/SDL.h

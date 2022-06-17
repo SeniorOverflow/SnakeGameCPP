@@ -865,7 +865,7 @@ extern DECLSPEC int SDLCALL SDL_GameControllerRumble(SDL_GameController *gamecon
 /**
  * Start a rumble effect in the game controller's triggers.
  *
- * Each call to this function cancels any previous trigger rumble effect, and
+ * Each call to this function cancels any previous m_trigger rumble effect, and
  * calling it with 0 intensity stops any rumbling.
  *
  * Note that this is rumbling of the _triggers_ and not the game controller as
@@ -874,12 +874,12 @@ extern DECLSPEC int SDLCALL SDL_GameControllerRumble(SDL_GameController *gamecon
  * SDL_GameControllerRumble() instead.
  *
  * \param gamecontroller The controller to vibrate
- * \param left_rumble The intensity of the left trigger rumble motor, from 0
+ * \param left_rumble The intensity of the left m_trigger rumble motor, from 0
  *                    to 0xFFFF
- * \param right_rumble The intensity of the right trigger rumble motor, from 0
+ * \param right_rumble The intensity of the right m_trigger rumble motor, from 0
  *                     to 0xFFFF
  * \param duration_ms The duration of the rumble effect, in milliseconds
- * \returns 0, or -1 if trigger rumble isn't supported on this controller
+ * \returns 0, or -1 if m_trigger rumble isn't supported on this controller
  *
  * \since This function is available since SDL 2.0.14.
  *
@@ -915,7 +915,7 @@ extern DECLSPEC SDL_bool SDLCALL SDL_GameControllerHasRumble(SDL_GameController 
  * Query whether a game controller has rumble support on triggers.
  *
  * \param gamecontroller The controller to query
- * \returns SDL_TRUE, or SDL_FALSE if this controller does not have trigger
+ * \returns SDL_TRUE, or SDL_FALSE if this controller does not have m_trigger
  *          rumble support
  *
  * \since This function is available since SDL 2.0.18.
@@ -925,7 +925,7 @@ extern DECLSPEC SDL_bool SDLCALL SDL_GameControllerHasRumble(SDL_GameController 
 extern DECLSPEC SDL_bool SDLCALL SDL_GameControllerHasRumbleTriggers(SDL_GameController *gamecontroller);
 
 /**
- * Update a game controller's LED color.
+ * Update a game controller's LED m_color.
  *
  * \param gamecontroller The controller to update
  * \param red The intensity of the red LED

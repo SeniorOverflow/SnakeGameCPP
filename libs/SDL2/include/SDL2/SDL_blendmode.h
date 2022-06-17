@@ -47,10 +47,10 @@ typedef enum
     SDL_BLENDMODE_ADD = 0x00000002,      /**< additive blending
                                               dstRGB = (srcRGB * srcA) + dstRGB
                                               dstA = dstA */
-    SDL_BLENDMODE_MOD = 0x00000004,      /**< color modulate
+    SDL_BLENDMODE_MOD = 0x00000004,      /**< m_color modulate
                                               dstRGB = srcRGB * dstRGB
                                               dstA = dstA */
-    SDL_BLENDMODE_MUL = 0x00000008,      /**< color multiply
+    SDL_BLENDMODE_MUL = 0x00000008,      /**< m_color multiply
                                               dstRGB = (srcRGB * dstRGB) + (dstRGB * (1-srcA))
                                               dstA = (srcA * dstA) + (dstA * (1-srcA)) */
     SDL_BLENDMODE_INVALID = 0x7FFFFFFF
@@ -143,8 +143,8 @@ typedef enum
  * - **opengles**: Supports the `SDL_BLENDOPERATION_ADD` operation with all
  *   factors. Color and alpha factors need to be the same. OpenGL ES 1
  *   implementation specific: May also support `SDL_BLENDOPERATION_SUBTRACT`
- *   and `SDL_BLENDOPERATION_REV_SUBTRACT`. May support color and alpha
- *   operations being different from each other. May support color and alpha
+ *   and `SDL_BLENDOPERATION_REV_SUBTRACT`. May support m_color and alpha
+ *   operations being different from each other. May support m_color and alpha
  *   factors being different from each other.
  * - **opengles2**: Supports the `SDL_BLENDOPERATION_ADD`,
  *   `SDL_BLENDOPERATION_SUBTRACT`, `SDL_BLENDOPERATION_REV_SUBTRACT`

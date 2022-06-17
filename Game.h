@@ -44,6 +44,7 @@ private:
             std::cout << "SDL_CreateRenderer Error: " << SDL_GetError() << std::endl;
         }
     }
+    void CheckCollision();
 
     void QuitGame() {
         SDL_DestroyWindow(window);

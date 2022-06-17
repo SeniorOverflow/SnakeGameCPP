@@ -63,7 +63,7 @@ assert can have unique static variables associated with it.
     #include <signal.h>
     #define SDL_TriggerBreakpoint() raise(SIGTRAP)
 #else
-    /* How do we trigger breakpoints on this platform? */
+    /* How do we m_trigger breakpoints on this platform? */
     #define SDL_TriggerBreakpoint()
 #endif
 
@@ -106,7 +106,7 @@ disable assertions.
 typedef enum
 {
     SDL_ASSERTION_RETRY,  /**< Retry the assert immediately. */
-    SDL_ASSERTION_BREAK,  /**< Make the debugger trigger a breakpoint. */
+    SDL_ASSERTION_BREAK,  /**< Make the debugger m_trigger a breakpoint. */
     SDL_ASSERTION_ABORT,  /**< Terminate the program. */
     SDL_ASSERTION_IGNORE,  /**< Ignore the assert. */
     SDL_ASSERTION_ALWAYS_IGNORE  /**< Ignore the assert from now on. */

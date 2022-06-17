@@ -438,7 +438,7 @@ typedef Uint32 SDL_AudioDeviceID;
  * successfully open the default device (NULL for first argument of
  * SDL_OpenAudioDevice()).
  *
- * This function may trigger a complete redetect of available hardware. It
+ * This function may m_trigger a complete redetect of available hardware. It
  * should not be called for each iteration of a loop, but rather once at the
  * start of a loop:
  *

@@ -826,7 +826,7 @@ extern DECLSPEC int SDLCALL SDL_JoystickRumble(SDL_Joystick *joystick, Uint16 lo
 /**
  * Start a rumble effect in the joystick's triggers
  *
- * Each call to this function cancels any previous trigger rumble effect, and
+ * Each call to this function cancels any previous m_trigger rumble effect, and
  * calling it with 0 intensity stops any rumbling.
  *
  * Note that this is rumbling of the _triggers_ and not the game controller as
@@ -835,12 +835,12 @@ extern DECLSPEC int SDLCALL SDL_JoystickRumble(SDL_Joystick *joystick, Uint16 lo
  * instead.
  *
  * \param joystick The joystick to vibrate
- * \param left_rumble The intensity of the left trigger rumble motor, from 0
+ * \param left_rumble The intensity of the left m_trigger rumble motor, from 0
  *                    to 0xFFFF
- * \param right_rumble The intensity of the right trigger rumble motor, from 0
+ * \param right_rumble The intensity of the right m_trigger rumble motor, from 0
  *                     to 0xFFFF
  * \param duration_ms The duration of the rumble effect, in milliseconds
- * \returns 0, or -1 if trigger rumble isn't supported on this joystick
+ * \returns 0, or -1 if m_trigger rumble isn't supported on this joystick
  *
  * \since This function is available since SDL 2.0.14.
  *
@@ -877,7 +877,7 @@ extern DECLSPEC SDL_bool SDLCALL SDL_JoystickHasRumble(SDL_Joystick *joystick);
  * Query whether a joystick has rumble support on triggers.
  *
  * \param joystick The joystick to query
- * \return SDL_TRUE if the joystick has trigger rumble, SDL_FALSE otherwise.
+ * \return SDL_TRUE if the joystick has m_trigger rumble, SDL_FALSE otherwise.
  *
  * \since This function is available since SDL 2.0.18.
  *
@@ -886,7 +886,7 @@ extern DECLSPEC SDL_bool SDLCALL SDL_JoystickHasRumble(SDL_Joystick *joystick);
 extern DECLSPEC SDL_bool SDLCALL SDL_JoystickHasRumbleTriggers(SDL_Joystick *joystick);
 
 /**
- * Update a joystick's LED color.
+ * Update a joystick's LED m_color.
  *
  * An example of a joystick LED is the light on the back of a PlayStation 4's
  * DualShock 4 controller.

@@ -73,11 +73,16 @@ void Spawner::SpawnFood(SDL_Renderer *renderer, std::vector<Food*> foods)
 {
     for(auto & food : foods)
     {
-        Color colorFood = food->getColor();
+        if(food->CheckOnUse())
+        {
+            continue;
+        }
+        else {
 
-        SDL_SetRenderDrawColor(renderer, colorFood.RED, colorFood.GREEN, colorFood.BLUE, 255);
-
-        SDL_RenderFillRect(renderer, &food->GetGameObjectRect());
+            Color colorFood = food->getColor();
+            SDL_SetRenderDrawColor(renderer, colorFood.RED, colorFood.GREEN, colorFood.BLUE, 255);
+            SDL_RenderFillRect(renderer, &food->GetGameObjectRect());
+        }
     }
 
 }

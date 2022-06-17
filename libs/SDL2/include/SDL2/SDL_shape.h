@@ -89,7 +89,7 @@ typedef enum {
     ShapeModeBinarizeAlpha,
     /** \brief A binarized alpha cutoff with a given integer value, but with the opposite comparison. */
     ShapeModeReverseBinarizeAlpha,
-    /** \brief A color key is applied. */
+    /** \brief A m_color key is applied. */
     ShapeModeColorKey
 } WindowShapeMode;
 

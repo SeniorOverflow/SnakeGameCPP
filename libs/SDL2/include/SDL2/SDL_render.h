@@ -33,7 +33,7 @@
  *  The primitives may be drawn in opaque, blended, or additive modes.
  *
  *  The texture images may be drawn in opaque, blended, or additive modes.
- *  They can have an additional color tint or alpha modulation applied to
+ *  They can have an additional m_color tint or alpha modulation applied to
  *  them, and may also be stretched with linear interpolation.
  *
  *  This API is designed to accelerate simple 2D operations. You may
@@ -91,7 +91,7 @@ typedef struct SDL_RendererInfo
 typedef struct SDL_Vertex
 {
     SDL_FPoint position;        /**< Vertex position, in SDL_Renderer coordinates  */
-    SDL_Color  color;           /**< Vertex color */
+    SDL_Color  color;           /**< Vertex m_color */
     SDL_FPoint tex_coord;       /**< Normalized texture coordinates, if needed */
 } SDL_Vertex;
 
@@ -121,7 +121,7 @@ typedef enum
 typedef enum
 {
     SDL_TEXTUREMODULATE_NONE = 0x00000000,     /**< No modulation */
-    SDL_TEXTUREMODULATE_COLOR = 0x00000001,    /**< srcC = srcC * color */
+    SDL_TEXTUREMODULATE_COLOR = 0x00000001,    /**< srcC = srcC * m_color */
     SDL_TEXTUREMODULATE_ALPHA = 0x00000002     /**< srcA = srcA * alpha */
 } SDL_TextureModulate;
 
@@ -388,21 +388,21 @@ extern DECLSPEC int SDLCALL SDL_QueryTexture(SDL_Texture * texture,
                                              int *w, int *h);
 
 /**
- * Set an additional color value multiplied into render copy operations.
+ * Set an additional m_color value multiplied into render copy operations.
  *
- * When this texture is rendered, during the copy operation each source color
- * channel is modulated by the appropriate color value according to the
+ * When this texture is rendered, during the copy operation each source m_color
+ * channel is modulated by the appropriate m_color value according to the
  * following formula:
  *
- * `srcC = srcC * (color / 255)`
+ * `srcC = srcC * (m_color / 255)`
  *
  * Color modulation is not always supported by the renderer; it will return -1
- * if color modulation is not supported.
+ * if m_color modulation is not supported.
  *
  * \param texture the texture to update
- * \param r the red color value multiplied into copy operations
- * \param g the green color value multiplied into copy operations
- * \param b the blue color value multiplied into copy operations
+ * \param r the red m_color value multiplied into copy operations
+ * \param g the green m_color value multiplied into copy operations
+ * \param b the blue m_color value multiplied into copy operations
  * \returns 0 on success or a negative error code on failure; call
  *          SDL_GetError() for more information.
  *
@@ -416,12 +416,12 @@ extern DECLSPEC int SDLCALL SDL_SetTextureColorMod(SDL_Texture * texture,
 
 
 /**
- * Get the additional color value multiplied into render copy operations.
+ * Get the additional m_color value multiplied into render copy operations.
  *
  * \param texture the texture to query
- * \param r a pointer filled in with the current red color value
- * \param g a pointer filled in with the current green color value
- * \param b a pointer filled in with the current blue color value
+ * \param r a pointer filled in with the current red m_color value
+ * \param g a pointer filled in with the current green m_color value
+ * \param b a pointer filled in with the current blue m_color value
  * \returns 0 on success or a negative error code on failure; call
  *          SDL_GetError() for more information.
  *
@@ -1040,9 +1040,9 @@ extern DECLSPEC void SDLCALL SDL_RenderLogicalToWindow(SDL_Renderer * renderer,
                                                             int *windowX, int *windowY);
 
 /**
- * Set the color used for drawing operations (Rect, Line and Clear).
+ * Set the m_color used for drawing operations (Rect, Line and Clear).
  *
- * Set the color for drawing or filling rectangles, lines, and points, and for
+ * Set the m_color for drawing or filling rectangles, lines, and points, and for
  * SDL_RenderClear().
  *
  * \param renderer the rendering context
@@ -1073,7 +1073,7 @@ extern DECLSPEC int SDLCALL SDL_SetRenderDrawColor(SDL_Renderer * renderer,
                                            Uint8 a);
 
 /**
- * Get the color used for drawing operations (Rect, Line and Clear).
+ * Get the m_color used for drawing operations (Rect, Line and Clear).
  *
  * \param renderer the rendering context
  * \param r a pointer filled in with the red value used to draw on the
@@ -1136,7 +1136,7 @@ extern DECLSPEC int SDLCALL SDL_GetRenderDrawBlendMode(SDL_Renderer * renderer,
                                                        SDL_BlendMode *blendMode);
 
 /**
- * Clear the current rendering target with the drawing color.
+ * Clear the current rendering target with the drawing m_color.
  *
  * This function clears the entire rendering target, ignoring the viewport and
  * the clip rectangle.
@@ -1316,10 +1316,10 @@ extern DECLSPEC int SDLCALL SDL_RenderDrawRects(SDL_Renderer * renderer,
                                                 int count);
 
 /**
- * Fill a rectangle on the current rendering target with the drawing color.
+ * Fill a rectangle on the current rendering target with the drawing m_color.
  *
- * The current drawing color is set by SDL_SetRenderDrawColor(), and the
- * color's alpha value is ignored unless blending is enabled with the
+ * The current drawing m_color is set by SDL_SetRenderDrawColor(), and the
+ * m_color's alpha value is ignored unless blending is enabled with the
  * appropriate call to SDL_SetRenderDrawBlendMode().
  *
  * \param renderer the rendering context
@@ -1346,7 +1346,7 @@ extern DECLSPEC int SDLCALL SDL_RenderFillRect(SDL_Renderer * renderer,
 
 /**
  * Fill some number of rectangles on the current rendering target with the
- * drawing color.
+ * drawing m_color.
  *
  * \param renderer the rendering context
  * \param rects an array of SDL_Rect structures representing the rectangles to
@@ -1376,7 +1376,7 @@ extern DECLSPEC int SDLCALL SDL_RenderFillRects(SDL_Renderer * renderer,
  * The texture is blended with the destination based on its blend mode set
  * with SDL_SetTextureBlendMode().
  *
- * The texture color is affected based on its color modulation set by
+ * The texture m_color is affected based on its m_color modulation set by
  * SDL_SetTextureColorMod().
  *
  * The texture alpha is affected based on its alpha modulation set by
@@ -1414,7 +1414,7 @@ extern DECLSPEC int SDLCALL SDL_RenderCopy(SDL_Renderer * renderer,
  * The texture is blended with the destination based on its blend mode set
  * with SDL_SetTextureBlendMode().
  *
- * The texture color is affected based on its color modulation set by
+ * The texture m_color is affected based on its m_color modulation set by
  * SDL_SetTextureColorMod().
  *
  * The texture alpha is affected based on its alpha modulation set by
@@ -1537,7 +1537,7 @@ extern DECLSPEC int SDLCALL SDL_RenderDrawRectsF(SDL_Renderer * renderer,
                                                  int count);
 
 /**
- * Fill a rectangle on the current rendering target with the drawing color at
+ * Fill a rectangle on the current rendering target with the drawing m_color at
  * subpixel precision.
  *
  * \param renderer The renderer which should fill a rectangle.
@@ -1552,7 +1552,7 @@ extern DECLSPEC int SDLCALL SDL_RenderFillRectF(SDL_Renderer * renderer,
 
 /**
  * Fill some number of rectangles on the current rendering target with the
- * drawing color at subpixel precision.
+ * drawing m_color at subpixel precision.
  *
  * \param renderer The renderer which should fill multiple rectangles.
  * \param rects A pointer to an array of destination rectangles.
@@ -1816,8 +1816,8 @@ extern DECLSPEC int SDLCALL SDL_RenderFlush(SDL_Renderer * renderer);
  * context, you need to write your own texture-loading methods.
  *
  * Also note that SDL may upload RGB textures as BGR (or vice-versa), and
- * re-order the color channels in the shaders phase, so the uploaded texture
- * may have swapped color channels.
+ * re-order the m_color channels in the shaders phase, so the uploaded texture
+ * may have swapped m_color channels.
  *
  * \param texture the texture to bind to the current OpenGL/ES/ES2 context
  * \param texw a pointer to a float value which will be filled with the

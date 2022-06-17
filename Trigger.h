@@ -12,7 +12,7 @@ class Trigger
 public:
 
     Trigger(int posX, int posY, int wight, int height);
-    bool isIntoTrigger( const SDL_Rect & rect);
+    bool isIntoTrigger( const Rect & rect);
     bool IsPointIntoTrigger(int posX, int posY);
 
 private:

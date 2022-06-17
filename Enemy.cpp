@@ -17,6 +17,7 @@ Color Mine::getColor() {
 void Mine::setPos(int posX, int posY) {
     this->body.x = posX;
     this->body.y = posY;
+    this->trigger = new Trigger(body.x, body.y, body.w, body.h);
 }
 
 
@@ -28,12 +29,39 @@ std::string Human::getName() {
     return "Human";
 }
 
+int Human::GetDamage() {
+    return this->m_damage;
+}
+int Mine::GetDamage() {
+    return this->m_damage;
+}
+
+bool Mine::isTriggered(const Rect & otherRect)
+{
+    if( this->trigger->isIntoTrigger(otherRect))
+    {
+        isUsed = true;
+        return true;
+    }
+    return false;
+}
+bool Human::isTriggered(const Rect & otherRect)
+{
+    if( this->trigger->isIntoTrigger(otherRect))
+    {
+        isUsed = true;
+        return true;
+    }
+    return false;
+}
+
 Color Human::getColor() {
     return this->color;
 }
 void Human::setPos(int posX, int posY) {
     this->body.x = posX;
     this->body.y = posY;
+    this->trigger = new Trigger(body.x, body.y, body.w, body.h);
 }
 
  Enemy* Enemy::getEnemy(EnemyType enemyType)

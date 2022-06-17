@@ -270,7 +270,7 @@ typedef enum
         SDL_DEFINE_PIXELFORMAT(SDL_PIXELTYPE_PACKED32, SDL_PACKEDORDER_ARGB,
                                SDL_PACKEDLAYOUT_2101010, 32, 4),
 
-    /* Aliases for RGBA byte arrays of color data, for the current platform */
+    /* Aliases for RGBA byte arrays of m_color data, for the current platform */
 #if SDL_BYTEORDER == SDL_BIG_ENDIAN
     SDL_PIXELFORMAT_RGBA32 = SDL_PIXELFORMAT_RGBA8888,
     SDL_PIXELFORMAT_ARGB32 = SDL_PIXELFORMAT_ARGB8888,
@@ -303,7 +303,7 @@ typedef enum
 
 /**
  * The bits of this structure can be directly reinterpreted as an integer-packed
- * color which uses the SDL_PIXELFORMAT_RGBA32 format (SDL_PIXELFORMAT_ABGR8888
+ * m_color which uses the SDL_PIXELFORMAT_RGBA32 format (SDL_PIXELFORMAT_ABGR8888
  * on little-endian systems and SDL_PIXELFORMAT_RGBA8888 on big-endian systems).
  */
 typedef struct SDL_Color
@@ -435,11 +435,11 @@ extern DECLSPEC SDL_PixelFormat * SDLCALL SDL_AllocFormat(Uint32 pixel_format);
 extern DECLSPEC void SDLCALL SDL_FreeFormat(SDL_PixelFormat *format);
 
 /**
- * Create a palette structure with the specified number of color entries.
+ * Create a palette structure with the specified number of m_color entries.
  *
  * The palette entries are initialized to white.
  *
- * \param ncolors represents the number of color entries in the color palette
+ * \param ncolors represents the number of m_color entries in the m_color palette
  * \returns a new SDL_Palette structure on success or NULL on failure (e.g. if
  *          there wasn't enough memory); call SDL_GetError() for more
  *          information.
@@ -499,17 +499,17 @@ extern DECLSPEC void SDLCALL SDL_FreePalette(SDL_Palette * palette);
 /**
  * Map an RGB triple to an opaque pixel value for a given pixel format.
  *
- * This function maps the RGB color value to the specified pixel format and
- * returns the pixel value best approximating the given RGB color value for
+ * This function maps the RGB m_color value to the specified pixel format and
+ * returns the pixel value best approximating the given RGB m_color value for
  * the given pixel format.
  *
- * If the format has a palette (8-bit) the index of the closest matching color
+ * If the format has a palette (8-bit) the index of the closest matching m_color
  * in the palette will be returned.
  *
  * If the specified pixel format has an alpha component it will be returned as
  * all 1 bits (fully opaque).
  *
- * If the pixel format bpp (color depth) is less than 32-bpp then the unused
+ * If the pixel format bpp (m_color depth) is less than 32-bpp then the unused
  * upper bits of the return value can safely be ignored (e.g., with a 16-bpp
  * format the return value can be assigned to a Uint16, and similarly a Uint8
  * for an 8-bpp format).
@@ -532,17 +532,17 @@ extern DECLSPEC Uint32 SDLCALL SDL_MapRGB(const SDL_PixelFormat * format,
 /**
  * Map an RGBA quadruple to a pixel value for a given pixel format.
  *
- * This function maps the RGBA color value to the specified pixel format and
- * returns the pixel value best approximating the given RGBA color value for
+ * This function maps the RGBA m_color value to the specified pixel format and
+ * returns the pixel value best approximating the given RGBA m_color value for
  * the given pixel format.
  *
  * If the specified pixel format has no alpha component the alpha value will
  * be ignored (as it will be in formats with a palette).
  *
- * If the format has a palette (8-bit) the index of the closest matching color
+ * If the format has a palette (8-bit) the index of the closest matching m_color
  * in the palette will be returned.
  *
- * If the pixel format bpp (color depth) is less than 32-bpp then the unused
+ * If the pixel format bpp (m_color depth) is less than 32-bpp then the unused
  * upper bits of the return value can safely be ignored (e.g., with a 16-bpp
  * format the return value can be assigned to a Uint16, and similarly a Uint8
  * for an 8-bpp format).
@@ -568,7 +568,7 @@ extern DECLSPEC Uint32 SDLCALL SDL_MapRGBA(const SDL_PixelFormat * format,
 /**
  * Get RGB values from a pixel in the specified format.
  *
- * This function uses the entire 8-bit [0..255] range when converting color
+ * This function uses the entire 8-bit [0..255] range when converting m_color
  * components from pixel formats with less than 8-bits per RGB component
  * (e.g., a completely white pixel in 16-bit RGB565 format would return [0xff,
  * 0xff, 0xff] not [0xf8, 0xfc, 0xf8]).
@@ -593,7 +593,7 @@ extern DECLSPEC void SDLCALL SDL_GetRGB(Uint32 pixel,
 /**
  * Get RGBA values from a pixel in the specified format.
  *
- * This function uses the entire 8-bit [0..255] range when converting color
+ * This function uses the entire 8-bit [0..255] range when converting m_color
  * components from pixel formats with less than 8-bits per RGB component
  * (e.g., a completely white pixel in 16-bit RGB565 format would return [0xff,
  * 0xff, 0xff] not [0xf8, 0xfc, 0xf8]).

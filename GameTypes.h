@@ -23,6 +23,8 @@ enum class FoodType
     Pie,
 };
 
+
+
 struct Rect {
 
     int x;

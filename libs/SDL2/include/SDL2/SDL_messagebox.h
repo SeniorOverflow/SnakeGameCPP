@@ -63,7 +63,7 @@ typedef struct
 } SDL_MessageBoxButtonData;
 
 /**
- * RGB value used in a message box color scheme
+ * RGB value used in a message box m_color scheme
  */
 typedef struct
 {

@@ -19,8 +19,8 @@ bool RectIntoRect(Rect aRect, Rect bRect) {
     return  false;
 }
 
-bool Trigger::isIntoTrigger(const SDL_Rect &rect) {
-    Rect triggerRect(m_posX, m_posX, m_wight ,m_height);
+bool Trigger::isIntoTrigger(const Rect &rect) {
+    Rect triggerRect(m_posX, m_posY, m_wight ,m_height);
     Rect otherRect(rect.x, rect.y, rect.w ,rect.h);
     return  RectIntoRect(triggerRect, otherRect);
 }

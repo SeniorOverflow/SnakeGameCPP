@@ -278,11 +278,11 @@ extern DECLSPEC SDL_bool SDLCALL SDL_GetRelativeMouseMode(void);
  * - data=0, mask=1: white
  * - data=1, mask=1: black
  * - data=0, mask=0: transparent
- * - data=1, mask=0: inverted color if possible, black if not.
+ * - data=1, mask=0: inverted m_color if possible, black if not.
  *
  * Cursors created with this function must be freed with SDL_FreeCursor().
  *
- * If you want to have a color cursor, or create your cursor from an
+ * If you want to have a m_color cursor, or create your cursor from an
  * SDL_Surface, you should use SDL_CreateColorCursor(). Alternately, you can
  * hide the cursor and draw your own as part of your game's rendering, but it
  * will be bound to the framerate.
@@ -290,7 +290,7 @@ extern DECLSPEC SDL_bool SDLCALL SDL_GetRelativeMouseMode(void);
  * Also, since SDL 2.0.0, SDL_CreateSystemCursor() is available, which
  * provides twelve readily available system cursors to pick from.
  *
- * \param data the color value for each pixel of the cursor
+ * \param data the m_color value for each pixel of the cursor
  * \param mask the mask value for each pixel of the cursor
  * \param w the width of the cursor
  * \param h the height of the cursor
@@ -313,7 +313,7 @@ extern DECLSPEC SDL_Cursor *SDLCALL SDL_CreateCursor(const Uint8 * data,
                                                      int hot_y);
 
 /**
- * Create a color cursor.
+ * Create a m_color cursor.
  *
  * \param surface an SDL_Surface structure representing the cursor image
  * \param hot_x the x position of the cursor hot spot

@@ -22,15 +22,16 @@ void Game::Update() {
             }
         }
 
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
         SDL_RenderClear(renderer); //Очистка рендера
-        Color snakeColor = m_shake->GetColor();
 
 
+        CheckCollision();
         spawner->SpawnEnemy(renderer, m_enemies);
         spawner->SpawnFood(renderer, m_foods);
 
-        SDL_SetRenderDrawColor(renderer, (Uint8) snakeColor.RED, (Uint8) snakeColor.GREEN, (Uint8) snakeColor.BLUE, 255);
+
+
         m_shake->AddToRender(renderer);
        // SDL_RenderFillRect(renderer, &rect);
         SDL_RenderPresent(renderer);
@@ -56,16 +57,16 @@ void Game::Start(GameDifficulty difficulty) {
             m_level = veryLowLevelFactory->createLevel();
             break;
         case GameDifficulty::Low:
-            m_level = veryLowLevelFactory->createLevel();
+            m_level = lowLevelFactory->createLevel();
             break;
         case GameDifficulty::Middle:
-            m_level = veryLowLevelFactory->createLevel();
+            m_level = middleLevelFactory->createLevel();
             break;
         case GameDifficulty::Hard:
-            m_level = veryLowLevelFactory->createLevel();
+            m_level = hardLevelFactory->createLevel();
             break;
         case GameDifficulty::Nightmare:
-            m_level = veryLowLevelFactory->createLevel();
+            m_level = nightmareLevelFactory->createLevel();
             break;
         default:
             break;
@@ -96,5 +97,43 @@ void Game::Start(GameDifficulty difficulty) {
     if (isRunning == false) {
         QuitGame();
     }
+}
 
+
+void Game::CheckCollision() {
+    auto [snakeBodyWight, snakeBodyHeight] = m_shake->GetBodyParam();
+    for( auto  & snakeBody : m_shake->GetSnakeBody())
+    {
+        auto [snakeBodyPosX, snakeBodyPosY] = snakeBody->getPos();
+        Rect rect(snakeBodyPosX,snakeBodyPosY, snakeBodyWight , snakeBodyHeight);
+        for(size_t i =0; i < m_foods.size() ; ++i)
+        {
+            if(m_foods[i]->CheckOnUse())
+            {
+                continue;
+            }
+            if( m_foods[i]->isTriggered(rect))
+            {
+                m_shake->AddHeal(m_foods[i]->GetHealth());
+                std::cout<<snakeBodyPosX << " - -  -" <<snakeBodyPosY<<std::endl;
+
+                std::cout<<"Trigered"<<std::endl;
+            }
+        }
+
+        for(size_t i =0; i < m_enemies.size() ; ++i)
+        {
+            if(m_enemies[i]->CheckOnUse())
+            {
+                continue;
+            }
+            if( m_enemies[i]->isTriggered(rect))
+            {
+                m_shake->AddDamage(m_enemies[i]->GetDamage());
+                std::cout<<snakeBodyPosX << " - -  -" <<snakeBodyPosY<<std::endl;
+
+                std::cout<<"Trigered"<<std::endl;
+            }
+        }
+    }
 }

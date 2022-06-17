@@ -4,9 +4,20 @@
 
 void Snake::AddToRender(SDL_Renderer * renderer)
 {
-    for(auto  &body : this->m_snakeBody)
+    bool isHead = true;
+
+    for(auto & body : this->m_snakeBody)
     {
-        SDL_RenderFillRect(renderer, &body.GetGameObjectRect());
+        if(isHead)
+        {
+            SDL_SetRenderDrawColor(renderer, (Uint8) m_colorHead.RED, (Uint8) m_colorHead.GREEN, (Uint8) m_colorHead.BLUE, 255);
+            isHead = false;
+        }
+        else
+        {
+            SDL_SetRenderDrawColor(renderer, (Uint8) m_colorBody.RED, (Uint8) m_colorBody.GREEN, (Uint8) m_colorBody.BLUE, 255);
+        }
+        SDL_RenderFillRect(renderer, &body->GetGameObjectRect());
     }
 }
 SDL_Rect & SnakeBody::GetGameObjectRect() {
@@ -16,10 +27,8 @@ SDL_Rect & SnakeBody::GetGameObjectRect() {
 
 void SnakeBody::Move(int verticalDirection, int horizontalDirection) {
 
-    std::cout<<body.x <<" --- " <<body.y<<std::endl;
     this->body.x +=verticalDirection;
     this->body.y +=horizontalDirection;
-
 
 }
 
@@ -46,17 +55,17 @@ void Snake::Move(int verticalDirection, int horizontalDirection) {
     {
 
         if(isHead) {
-            auto [l_prevPosX, l_prevPosY] = body.getPos();
+            auto [l_prevPosX, l_prevPosY] = body->getPos();
             prevPosX = l_prevPosX;
             prevPosY = l_prevPosY;
-            body.Move(verticalDirection, horizontalDirection);
+            body->Move(verticalDirection, horizontalDirection);
             isHead = false;
             continue;
         }
         else
         {
-            auto [l_prevPosX, l_prevPosY] = body.getPos();
-            body.setPos(prevPosX,prevPosY);
+            auto [l_prevPosX, l_prevPosY] = body->getPos();
+            body->setPos(prevPosX,prevPosY);
             prevPosX = l_prevPosX;
             prevPosY = l_prevPosY;
 
@@ -66,26 +75,72 @@ void Snake::Move(int verticalDirection, int horizontalDirection) {
 }
 
 
-std::tuple<int, int> SnakeBody::getPos()
+std::tuple<int, int> SnakeBody::getPos() const
 {
     return std::tuple(this->body.x, this->body.y);
 }
 
 Snake::Snake() {
-    color.RED = 244;
-    color.GREEN = 124;
-    color.BLUE = 124;
+    AddSnakeBody();
+}
+std::vector<const SnakeBody*> Snake::GetSnakeBody()
+{
+    std::vector<const SnakeBody*> body;
+    for(auto & snakebody : m_snakeBody)
+    {
+        body.push_back(snakebody);
+    }
+    return  body;
+}
 
-    SnakeBody body( this->pos_x, this->pos_y, this->bodyWight, this->bodyHeight );
-    SnakeBody body2( this->pos_x, this->pos_y - 15, this->bodyWight, this->bodyHeight );
-    SnakeBody body3( this->pos_x, this->pos_y  - 30, this->bodyWight, this->bodyHeight );
-    SnakeBody body4( this->pos_x, this->pos_y - 45, this->bodyWight, this->bodyHeight );
-    SnakeBody body5( this->pos_x, this->pos_y - 60, this->bodyWight, this->bodyHeight );
+void Snake::AddHeal(int heal)
+{
+    m_shankeHeal += heal;
+    std::cout<<"count\t" <<m_shankeHeal / 100<<" -  - -"<<m_shankeHeal << "health : \t "<<heal<<std::endl;
+    std::cout<<m_snakeBody.size()<<std::endl;
+    if(m_shankeHeal / 100  > m_snakeBody.size())
+    {
+        int countNeededBody =    m_shankeHeal / 100 - m_snakeBody.size();
+        AddSnakeBody(countNeededBody);
+        std::cout<<"Added"<<std::endl;
+    }
+}
+void Snake::AddDamage(int damage)
+{
+    m_shankeHeal -= damage;
+    if(m_shankeHeal / 100 < m_snakeBody.size())
+    {
+        size_t countRemoveBody = m_snakeBody.size() - m_shankeHeal / 100;
+        RemoveBody(countRemoveBody);
+    }
+}
 
 
-    this->m_snakeBody.push_back(body);
-    this->m_snakeBody.push_back(body2);
-    this->m_snakeBody.push_back(body3);
-    this->m_snakeBody.push_back(body4);
-    this->m_snakeBody.push_back(body5);
+void Snake::AddSnakeBody(size_t count)
+{
+
+    for(size_t i = 0; i < count; ++i) {
+        SnakeBody *body;
+        if(m_lastBody == nullptr) {
+            body = new SnakeBody(this->pos_x, this->pos_y, this->bodyWight, this->bodyHeight);
+        }
+        else
+        {
+            auto [posX, posY] = m_lastBody->getPos();
+            body =  new SnakeBody(posX, posY, this->bodyWight, this->bodyHeight);
+        }
+            m_lastBody = body;
+            this->m_snakeBody.push_back(body);
+    }
+}
+void Snake::RemoveBody(size_t count)
+{
+    if(count <= m_snakeBody.size())
+    {
+        m_snakeBody.erase(m_snakeBody.end() - count , m_snakeBody.end());
+        if(m_snakeBody.size() > 0)
+        {
+            m_lastBody = m_snakeBody[m_snakeBody.size() -1 ];
+        }
+    }
 }
