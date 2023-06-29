@@ -1,0 +1,12 @@
+
+add_subdirectory(Apple)
+add_subdirectory(Enemy)
+add_subdirectory(Food)
+add_subdirectory(Game)
+add_subdirectory(GUI)
+add_subdirectory(IGameObject)
+add_subdirectory(Level)
+add_subdirectory(Player)
+add_subdirectory(Snake)
+add_subdirectory(Spawner)
+add_subdirectory(Trigger)

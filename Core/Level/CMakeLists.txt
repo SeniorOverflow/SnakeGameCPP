@@ -1,0 +1,20 @@
+
+set(LIB_NAME LevelLib)
+set(DEPENDENCIES
+
+        SDL2::Main
+        SDL2::TTF
+        GUILib
+        GameLib
+        FoodLib
+        SpawnerLib
+        )
+
+add_library(${LIB_NAME} STATIC)
+
+target_include_directories(${LIB_NAME} PUBLIC "include")
+
+
+file(GLOB_RECURSE SOURCES "include/*" "src/*")
+target_sources(${LIB_NAME} PRIVATE ${SOURCES})
+target_link_libraries(${LIB_NAME} PUBLIC ${DEPENDENCIES})

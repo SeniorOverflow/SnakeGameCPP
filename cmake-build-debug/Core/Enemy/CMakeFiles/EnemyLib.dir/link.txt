@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libEnemyLib.a CMakeFiles/EnemyLib.dir/src/Enemy.cpp.obj
+C:\mingw64\bin\ranlib.exe libEnemyLib.a

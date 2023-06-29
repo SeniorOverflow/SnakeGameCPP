@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libNewGameWindowLib.a CMakeFiles/NewGameWindowLib.dir/src/NewGameWindow.cpp.obj
+C:\mingw64\bin\ranlib.exe libNewGameWindowLib.a

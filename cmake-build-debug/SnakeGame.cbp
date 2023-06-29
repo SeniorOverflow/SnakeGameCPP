@@ -1,0 +1,1626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SnakeGame"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\sdl2\;CMake Files\Core\;CMake Files\Core\Apple\;CMake Files\Core\Enemy\;CMake Files\Core\Food\;CMake Files\Core\Game\;CMake Files\Core\GUI\;CMake Files\Core\GUI\StartWindow\;CMake Files\Core\GUI\NewGameWindow\;CMake Files\Core\GUI\SaveGameWindow\;CMake Files\Core\GUI\LoadGameWindow\;CMake Files\Core\GUI\SettingsWindow\;CMake Files\Core\GUI\EscSettingsWindow\;CMake Files\Core\GUI\EscMenuWindow\;CMake Files\Core\GUI\CreateHostWindow\;CMake Files\Core\IGameObject\;CMake Files\Core\Level\;CMake Files\Core\Player\;CMake Files\Core\Snake\;CMake Files\Core\Spawner\;CMake Files\Core\Trigger\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SnakeGame">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/SnakeGame.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Apple/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 SnakeGame"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SnakeGame/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/SnakeGame.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Apple/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 SnakeGame/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AppleLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple/libAppleLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Apple/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple/Makefile&quot;  VERBOSE=1 AppleLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AppleLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple/libAppleLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Apple/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple/Makefile&quot;  VERBOSE=1 AppleLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Apple/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EnemyLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy/libEnemyLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy/Makefile&quot;  VERBOSE=1 EnemyLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EnemyLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy/libEnemyLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy/Makefile&quot;  VERBOSE=1 EnemyLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Enemy/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FoodLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food/libFoodLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food/Makefile&quot;  VERBOSE=1 FoodLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FoodLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food/libFoodLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food/Makefile&quot;  VERBOSE=1 FoodLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Food/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GameLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game/libGameLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game/Makefile&quot;  VERBOSE=1 GameLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GameLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game/libGameLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game/Makefile&quot;  VERBOSE=1 GameLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Game/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GUILib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/libGUILib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/Makefile&quot;  VERBOSE=1 GUILib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GUILib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/libGUILib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/Makefile&quot;  VERBOSE=1 GUILib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="StartWindowLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow/libStartWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow/Makefile&quot;  VERBOSE=1 StartWindowLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="StartWindowLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow/libStartWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow/Makefile&quot;  VERBOSE=1 StartWindowLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/StartWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NewGameWindowLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow/libNewGameWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow/Makefile&quot;  VERBOSE=1 NewGameWindowLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NewGameWindowLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow/libNewGameWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow/Makefile&quot;  VERBOSE=1 NewGameWindowLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/NewGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SaveGameWindowLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow/libSaveGameWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow/Makefile&quot;  VERBOSE=1 SaveGameWindowLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SaveGameWindowLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow/libSaveGameWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow/Makefile&quot;  VERBOSE=1 SaveGameWindowLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SaveGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LoadGameWindowLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow/libLoadGameWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow/Makefile&quot;  VERBOSE=1 LoadGameWindowLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LoadGameWindowLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow/libLoadGameWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow/Makefile&quot;  VERBOSE=1 LoadGameWindowLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/LoadGameWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SettingsWindowLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow/libSettingsWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow/Makefile&quot;  VERBOSE=1 SettingsWindowLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SettingsWindowLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow/libSettingsWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow/Makefile&quot;  VERBOSE=1 SettingsWindowLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/SettingsWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EscSettingsWindowLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow/libEscSettingsWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow/Makefile&quot;  VERBOSE=1 EscSettingsWindowLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EscSettingsWindowLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow/libEscSettingsWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow/Makefile&quot;  VERBOSE=1 EscSettingsWindowLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscSettingsWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EscMenuWindowLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow/libEscMenuWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow/Makefile&quot;  VERBOSE=1 EscMenuWindowLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EscMenuWindowLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow/libEscMenuWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow/Makefile&quot;  VERBOSE=1 EscMenuWindowLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/EscMenuWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CreateHostWindowLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow/libCreateHostWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow/Makefile&quot;  VERBOSE=1 CreateHostWindowLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CreateHostWindowLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow/libCreateHostWindowLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow/Makefile&quot;  VERBOSE=1 CreateHostWindowLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/GUI/CreateHostWindow/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IGameObjectLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject/libIGameObjectLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject/Makefile&quot;  VERBOSE=1 IGameObjectLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IGameObjectLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject/libIGameObjectLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject/Makefile&quot;  VERBOSE=1 IGameObjectLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/IGameObject/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LevelLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level/libLevelLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level/Makefile&quot;  VERBOSE=1 LevelLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LevelLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level/libLevelLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level/Makefile&quot;  VERBOSE=1 LevelLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Level/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PlayerLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player/libPlayerLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player/Makefile&quot;  VERBOSE=1 PlayerLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PlayerLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player/libPlayerLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player/Makefile&quot;  VERBOSE=1 PlayerLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Player/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SnakeLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake/libSnakeLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake/Makefile&quot;  VERBOSE=1 SnakeLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SnakeLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake/libSnakeLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake/Makefile&quot;  VERBOSE=1 SnakeLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Snake/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SpawnerLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner/libSpawnerLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner/Makefile&quot;  VERBOSE=1 SpawnerLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SpawnerLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner/libSpawnerLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner/Makefile&quot;  VERBOSE=1 SpawnerLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Spawner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TriggerLib">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger/libTriggerLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger/Makefile&quot;  VERBOSE=1 TriggerLib"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TriggerLib/fast">
+				<Option output="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger/libTriggerLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include"/>
+					<Add directory="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include"/>
+					<Add directory="C:/mingw64/include/SDL2"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/backward"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed"/>
+					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger/Makefile&quot;  VERBOSE=1 TriggerLib/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake-build-debug/Core/Trigger/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Apple/include/Apple.h">
+			<Option target="AppleLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Apple/src/Apple.cpp">
+			<Option target="AppleLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/include/Enemy.h">
+			<Option target="EnemyLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/src/Enemy.cpp">
+			<Option target="EnemyLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/include/Food.h">
+			<Option target="FoodLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/src/Food.cpp">
+			<Option target="FoodLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/include/CreateHostWindow.h">
+			<Option target="CreateHostWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/src/CreateHostWindow.cpp">
+			<Option target="CreateHostWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/include/EscMenuWindow.h">
+			<Option target="EscMenuWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/src/EscMenuWindow.cpp">
+			<Option target="EscMenuWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/include/EscSettingsWindow.h">
+			<Option target="EscSettingsWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/src/EscSettingsWindow.cpp">
+			<Option target="EscSettingsWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/include/LoadGameWindow.h">
+			<Option target="LoadGameWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/src/LoadGameWindow.cpp">
+			<Option target="LoadGameWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/include/NewGameWindow.h">
+			<Option target="NewGameWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/src/NewGameWindow.cpp">
+			<Option target="NewGameWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/include/SaveGameWindow.h">
+			<Option target="SaveGameWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/src/SaveGameWindow.cpp">
+			<Option target="SaveGameWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/include/SettingsWindow.h">
+			<Option target="SettingsWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/src/SettingsWindow.cpp">
+			<Option target="SettingsWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/include/StartGameWindow.h">
+			<Option target="StartWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/src/StartGameWindow.cpp">
+			<Option target="StartWindowLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include/GUI.h">
+			<Option target="GUILib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/include/GUITypes.h">
+			<Option target="GUILib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/src/GUI.cpp">
+			<Option target="GUILib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include/Game.h">
+			<Option target="GameLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/include/GameTypes.h">
+			<Option target="GameLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/src/Game.cpp">
+			<Option target="GameLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/include/IGameObject.h">
+			<Option target="IGameObjectLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/src/IGameObject.cpp">
+			<Option target="IGameObjectLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/include/Level.h">
+			<Option target="LevelLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/src/Level.cpp">
+			<Option target="LevelLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/include/IPlayer.h">
+			<Option target="PlayerLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/src/IPlayer.cpp">
+			<Option target="PlayerLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/include/Snake.h">
+			<Option target="SnakeLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/src/Snake.cpp">
+			<Option target="SnakeLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/include/Spawner.h">
+			<Option target="SpawnerLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/src/Spawner.cpp">
+			<Option target="SpawnerLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/include/Trigger.h">
+			<Option target="TriggerLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/src/Trigger.cpp">
+			<Option target="TriggerLib"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/main.cpp">
+			<Option target="SnakeGame"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake/sdl2/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\cmake\sdl2\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/cmake/sdl2/FindSDL2_ttf.cmake">
+			<Option virtualFolder="CMake Files\cmake\sdl2\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Apple/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\Apple\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Enemy/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\Enemy\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Food/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\Food\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Game/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\Game\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CMakelists.txt">
+			<Option virtualFolder="CMake Files\Core\GUI\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/StartWindow/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\GUI\StartWindow\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/NewGameWindow/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\GUI\NewGameWindow\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SaveGameWindow/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\GUI\SaveGameWindow\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/LoadGameWindow/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\GUI\LoadGameWindow\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/SettingsWindow/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\GUI\SettingsWindow\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscSettingsWindow/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\GUI\EscSettingsWindow\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/EscMenuWindow/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\GUI\EscMenuWindow\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/GUI/CreateHostWindow/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\GUI\CreateHostWindow\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/IGameObject/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\IGameObject\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Level/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\Level\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Player/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\Player\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Snake/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\Snake\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Spawner/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\Spawner\"/>
+		</Unit>
+		<Unit filename="C:/Users/DonEn/Documents/git/SnakeGameCPP/Core/Trigger/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Core\Trigger\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

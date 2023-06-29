@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libEscMenuWindowLib.a CMakeFiles/EscMenuWindowLib.dir/src/EscMenuWindow.cpp.obj
+C:\mingw64\bin\ranlib.exe libEscMenuWindowLib.a

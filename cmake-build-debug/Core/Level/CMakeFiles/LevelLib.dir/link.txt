@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libLevelLib.a CMakeFiles/LevelLib.dir/src/Level.cpp.obj
+C:\mingw64\bin\ranlib.exe libLevelLib.a

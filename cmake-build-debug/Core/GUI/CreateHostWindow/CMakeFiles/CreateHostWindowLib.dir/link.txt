@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libCreateHostWindowLib.a CMakeFiles/CreateHostWindowLib.dir/src/CreateHostWindow.cpp.obj
+C:\mingw64\bin\ranlib.exe libCreateHostWindowLib.a

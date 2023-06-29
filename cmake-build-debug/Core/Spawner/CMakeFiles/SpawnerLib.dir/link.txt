@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libSpawnerLib.a CMakeFiles/SpawnerLib.dir/src/Spawner.cpp.obj
+C:\mingw64\bin\ranlib.exe libSpawnerLib.a

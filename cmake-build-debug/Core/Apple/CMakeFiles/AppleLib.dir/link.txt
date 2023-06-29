@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libAppleLib.a CMakeFiles/AppleLib.dir/src/Apple.cpp.obj
+C:\mingw64\bin\ranlib.exe libAppleLib.a

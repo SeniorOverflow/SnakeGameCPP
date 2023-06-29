@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libSnakeLib.a CMakeFiles/SnakeLib.dir/src/Snake.cpp.obj
+C:\mingw64\bin\ranlib.exe libSnakeLib.a

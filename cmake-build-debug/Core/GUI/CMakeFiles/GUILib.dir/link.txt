@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libGUILib.a CMakeFiles/GUILib.dir/src/GUI.cpp.obj
+C:\mingw64\bin\ranlib.exe libGUILib.a
