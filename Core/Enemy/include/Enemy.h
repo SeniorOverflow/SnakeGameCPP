@@ -5,7 +5,7 @@
 #include <string>
 #include "Trigger.h"
 #include <SDL.h>
-
+#include <tuple>
 
 class Enemy {
 public:
@@ -13,6 +13,7 @@ public:
     virtual SDL_Rect &GetGameObjectRect()  = 0;
     virtual Color getColor() = 0;
     virtual void setPos(int  posX , int posY) = 0;
+    virtual std::tuple<int, int> getPos() = 0;
     virtual bool isTriggered(const Rect & rect) = 0;
     virtual bool CheckOnUse() = 0;
     virtual int GetDamage() = 0;
@@ -26,6 +27,7 @@ public :
 
     SDL_Rect &GetGameObjectRect() override;
     void setPos(int  posX , int posY) override;
+    std::tuple<int, int> getPos() override;
     std::string getName() override;
     Color getColor() override;
 
@@ -34,7 +36,7 @@ public :
     int GetDamage() override;
 
 private:
-    int m_damage {50};
+    int m_damage {1};
     int m_width {20};
     int m_height {20};
     bool isUsed = false;
@@ -47,6 +49,8 @@ class Human : public Enemy {
 
     SDL_Rect &GetGameObjectRect() override;
     void setPos(int  posX , int posY) override;
+
+    std::tuple<int, int> getPos() override;
     std::string getName() override;
     Color getColor() override;
 
@@ -55,7 +59,7 @@ class Human : public Enemy {
     int GetDamage() override;
 
 private:
-    int m_damage {50};
+    int m_damage {2};
     int m_width {20};
     int m_height {20};
     bool isUsed = false;

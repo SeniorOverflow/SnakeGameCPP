@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc libTriggerLib.a CMakeFiles/TriggerLib.dir/src/Trigger.cpp.obj
-C:\mingw64\bin\ranlib.exe libTriggerLib.a

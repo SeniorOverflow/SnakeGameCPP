@@ -17,9 +17,9 @@ class Spawner {
 public :
     Spawner( int windowWight, int windowHeight);
 
-    void SpawnEnemy(SDL_Renderer *renderer, std::vector<Enemy*> enemies);
+    void DrawCallEnemy(SDL_Renderer *renderer, const std::vector<Enemy*> enemies);
 
-    void SpawnFood(SDL_Renderer *renderer, std::vector<Food*> foods);
+    void DrawCallFood(SDL_Renderer *renderer,const  std::vector<Food*> foods);
 
     void SpawnSnake(SDL_Renderer *renderer, std::unique_ptr<Snake> snake);
 

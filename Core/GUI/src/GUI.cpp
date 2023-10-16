@@ -1,5 +1,6 @@
 #include "GUI.h"
 //#include "../../Game/include/GameTypes.h"
+//#include "../../Game/include/GameTypes.h"
 
 
 GUI::GUI()  {
@@ -36,7 +37,6 @@ void GUI::showStartWindow() {
 
     switch(m_startWindow.stateWindow())
     {
-
         case StartGameWindow::StateWindow::Wait:
             break;
         case StartGameWindow::StateWindow::NewGame:
@@ -207,7 +207,8 @@ void GUI::onEscMenuStateWindow(EscMenuWindow::StateWindow state) {
         case EscMenuWindow::StateWindow::Back:
             break;
         case EscMenuWindow::StateWindow::Exit: {
-            showStartWindow();
+            //showStartWindow();
+            m_guiState = State::ExitToMainWindow;
             break;
         }
         case EscMenuWindow::StateWindow::Wait:
@@ -232,23 +233,23 @@ void GUI::onSettings() {
 }
 
 void GUI::onVeryLow() {
- m_difficulty = SelectedDifficulty::VeryLow;
+ m_difficulty = GameDifficulty::VeryLow;
 }
 
 void GUI::onLow() {
-    m_difficulty = SelectedDifficulty::Low;
+    m_difficulty = GameDifficulty::Low;
 }
 
 void GUI::onMiddle() {
-    m_difficulty = SelectedDifficulty::Middle;
+    m_difficulty = GameDifficulty::Middle;
 }
 
 void GUI::onHard() {
-    m_difficulty = SelectedDifficulty::Hard;
+    m_difficulty = GameDifficulty::Hard;
 }
 
 void GUI::onNightmare() {
-    m_difficulty = SelectedDifficulty::Nightmare;
+    m_difficulty = GameDifficulty::Nightmare;
 }
 
 void GUI::onBackNewGame() {
@@ -311,7 +312,7 @@ void GUI::DeleteSave(size_t saveId) {
 
 }
 
-GUI::SelectedDifficulty GUI::selectedDifficulty() const {
+GameDifficulty GUI::selectedDifficulty() const {
     return m_difficulty;
 }
 
@@ -330,6 +331,26 @@ GUI::State GUI::guiState() const {
 void GUI::onPressESC() {
     m_escMenuWindow.show(m_window, m_renderer);
     onEscMenuStateWindow(m_escMenuWindow.stateWindow());
+}
+
+void GUI::onEndGameWindowState(EndGameWindow::StateWindow state) {
+
+    switch (state) {
+
+        case EndGameWindow::StateWindow::LoadGame:
+            break;
+        case EndGameWindow::StateWindow::Exit: {
+            m_guiState = State::ExitToMainWindow;
+            break;
+        }
+        case EndGameWindow::StateWindow::Wait:
+            break;
+    }
+}
+
+void GUI::onDead() {
+    m_endGameWindow.show(m_window, m_renderer);
+    onEndGameWindowState(m_endGameWindow.stateWindow());
 }
 
 

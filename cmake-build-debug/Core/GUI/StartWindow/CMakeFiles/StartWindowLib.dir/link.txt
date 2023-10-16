@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc libStartWindowLib.a CMakeFiles/StartWindowLib.dir/src/StartGameWindow.cpp.obj
-C:\mingw64\bin\ranlib.exe libStartWindowLib.a

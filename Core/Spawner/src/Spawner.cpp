@@ -54,28 +54,35 @@ Spawner::Spawner( int windowWight, int windowHeight)
     m_windowWight = windowWight;
 }
 
-void Spawner::SpawnEnemy(SDL_Renderer *renderer, std::vector<Enemy*> enemies)
+void Spawner::DrawCallEnemy(SDL_Renderer *renderer, const std::vector<Enemy*> enemies)
 {
+    for(size_t i  = 0 ; i < enemies.size(); ++i)
 
-    for(auto & enemy : enemies)
     {
-        Color colorEnemy = enemy->getColor();
+        if(enemies[i]->CheckOnUse())
+        {
+            continue;
+        }
+        else {
+            Color colorEnemy = enemies[i]->getColor();
 
-        SDL_SetRenderDrawColor(renderer, colorEnemy.RED, colorEnemy.GREEN, colorEnemy.BLUE, 255);
-        SDL_RenderFillRect(renderer, &enemy->GetGameObjectRect());
+            SDL_SetRenderDrawColor(renderer, colorEnemy.RED, colorEnemy.GREEN, colorEnemy.BLUE, 255);
+            SDL_RenderFillRect(renderer, &enemies[i]->GetGameObjectRect());
+        }
     }
 
 
 }
 
 
-void Spawner::SpawnFood(SDL_Renderer *renderer, std::vector<Food*> foods)
+void Spawner::DrawCallFood(SDL_Renderer *renderer, const std::vector<Food*> foods)
 {
     for(auto & food : foods)
     {
         if(food->CheckOnUse())
         {
             continue;
+
         }
         else {
 

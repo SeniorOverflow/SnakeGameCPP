@@ -12,10 +12,12 @@
 #include "CreateHostWindow.h"
 
 //#include "Game.h"
-//#include "GameTypes.h"
+#include "GameTypes.h"
 #include <string>
 #include <memory>
 #include "GUITypes.h"
+#include "EndGameWindow.h"
+
 
 class GUI
 {
@@ -24,16 +26,17 @@ public:
     {
         StartGame  = 0x00,
         ExitGame = 0x01,
-        None = 0x02
+        ExitToMainWindow = 0x02,
+        None = 0xFF
     };
-    enum class SelectedDifficulty : uint8_t
-    {
-        VeryLow = 0x00,
-        Low= 0x01,
-        Middle= 0x02,
-        Hard= 0x03,
-        Nightmare = 0x04
-    };
+//    enum class SelectedDifficulty : uint8_t
+//    {
+//        VeryLow = 0x00,
+//        Low= 0x01,
+//        Middle= 0x02,
+//        Hard= 0x03,
+//        Nightmare = 0x04
+//    };
 private:
     void onStartWindowState(StartGameWindow::StateWindow state);
     void onNewGameWindowState(NewGameWindow::StateWindow state);
@@ -43,7 +46,7 @@ private:
     void onCreateHostWindowState(CreateHostWindow::StateWindow state);
     void onEscSettingsWindowState(EscSettingsWindow::StateWindow state);
     void onEscMenuStateWindow(EscMenuWindow::StateWindow state);
-
+    void onEndGameWindowState(EndGameWindow::StateWindow state);
     void onBackNewGame ();
     void onBackLoadGame();
     void onBackCreateHost();
@@ -80,12 +83,13 @@ private:
 public:
     GUI();
     void showStartWindow();
-    SelectedDifficulty selectedDifficulty() const;
+    GameDifficulty selectedDifficulty() const;
     State guiState() const;
 
     SDL_Window * window();
     SDL_Renderer * renderer();
     void onPressESC();
+    void onDead();
     ~GUI();
 
 private:
@@ -100,6 +104,7 @@ private:
     CreateHostWindow m_createHostWindow;
     EscMenuWindow m_escMenuWindow;
     EscSettingsWindow m_escSettingsWindow;
+    EndGameWindow m_endGameWindow;
 
 
 
@@ -107,6 +112,6 @@ private:
     SDL_Window * m_window { nullptr};
     SDL_Renderer * m_renderer { nullptr};
 
-    SelectedDifficulty m_difficulty;
+    GameDifficulty m_difficulty;
     State m_guiState;
 };

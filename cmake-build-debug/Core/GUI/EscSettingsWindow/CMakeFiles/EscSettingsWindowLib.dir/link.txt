@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc libEscSettingsWindowLib.a CMakeFiles/EscSettingsWindowLib.dir/src/EscSettingsWindow.cpp.obj
-C:\mingw64\bin\ranlib.exe libEscSettingsWindowLib.a

@@ -80,6 +80,7 @@ std::tuple<int, int> SnakeBody::getPos() const
     return std::tuple(this->body.x, this->body.y);
 }
 
+
 Snake::Snake() {
     AddSnakeBody();
 }
@@ -95,22 +96,22 @@ std::vector<const SnakeBody*> Snake::GetSnakeBody()
 
 void Snake::AddHeal(int heal)
 {
-    m_shankeHeal += heal;
-    std::cout<<"count\t" <<m_shankeHeal / 100<<" -  - -"<<m_shankeHeal << "health : \t "<<heal<<std::endl;
+    m_snakeHeal += heal;
+    std::cout<<"count\t" <<m_snakeHeal / 100<<" -  - -"<<m_snakeHeal << "health : \t "<<heal<<std::endl;
     std::cout<<m_snakeBody.size()<<std::endl;
-    if(m_shankeHeal / 100  > m_snakeBody.size())
+    if(m_snakeHeal / 100  > m_snakeBody.size())
     {
-        int countNeededBody =    m_shankeHeal / 100 - m_snakeBody.size();
+        int countNeededBody =    m_snakeHeal / 100 - m_snakeBody.size();
         AddSnakeBody(countNeededBody);
         std::cout<<"Added"<<std::endl;
     }
 }
 void Snake::AddDamage(int damage)
 {
-    m_shankeHeal -= damage;
-    if(m_shankeHeal / 100 < m_snakeBody.size())
+    m_snakeHeal -= damage;
+    if(m_snakeHeal / 100 < m_snakeBody.size())
     {
-        size_t countRemoveBody = m_snakeBody.size() - m_shankeHeal / 100;
+        size_t countRemoveBody = m_snakeBody.size() - m_snakeHeal / 100;
         RemoveBody(countRemoveBody);
     }
 }
@@ -142,5 +143,16 @@ void Snake::RemoveBody(size_t count)
         {
             m_lastBody = m_snakeBody[m_snakeBody.size() -1 ];
         }
+        else
+        {
+            m_snakeState = SnakeState::Dead;
+        }
+    }
+}
+
+void Snake::TeleportToPos(int posX, int posY) {
+    if(m_snakeBody.size() > 0 )
+    {
+        m_snakeBody[0]->setPos(posX, posY);
     }
 }

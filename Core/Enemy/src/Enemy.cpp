@@ -35,6 +35,10 @@ int Human::GetDamage() {
 int Mine::GetDamage() {
     return this->m_damage;
 }
+std::tuple<int, int> Mine::getPos()
+{
+    return  std::tuple<int, int>{body.x , body.y};
+}
 
 bool Mine::isTriggered(const Rect & otherRect)
 {
@@ -64,7 +68,11 @@ void Human::setPos(int posX, int posY) {
     this->trigger = new Trigger(body.x, body.y, body.w, body.h);
 }
 
- Enemy* Enemy::getEnemy(EnemyType enemyType)
+std::tuple<int, int> Human::getPos() {
+    return std::tuple<int, int>(body.x, body.y);
+}
+
+Enemy* Enemy::getEnemy(EnemyType enemyType)
  {
      switch (enemyType) {
          case EnemyType::Mine:

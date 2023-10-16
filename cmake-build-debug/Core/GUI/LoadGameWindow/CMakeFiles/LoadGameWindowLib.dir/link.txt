@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc libLoadGameWindowLib.a CMakeFiles/LoadGameWindowLib.dir/src/LoadGameWindow.cpp.obj
-C:\mingw64\bin\ranlib.exe libLoadGameWindowLib.a

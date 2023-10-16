@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc libSaveGameWindowLib.a CMakeFiles/SaveGameWindowLib.dir/src/SaveGameWindow.cpp.obj
-C:\mingw64\bin\ranlib.exe libSaveGameWindowLib.a

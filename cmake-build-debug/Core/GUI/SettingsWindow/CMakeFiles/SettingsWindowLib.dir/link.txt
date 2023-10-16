@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc libSettingsWindowLib.a CMakeFiles/SettingsWindowLib.dir/src/SettingsWindow.cpp.obj
-C:\mingw64\bin\ranlib.exe libSettingsWindowLib.a

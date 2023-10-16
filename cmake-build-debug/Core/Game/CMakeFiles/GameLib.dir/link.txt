@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc libGameLib.a CMakeFiles/GameLib.dir/src/Game.cpp.obj
-C:\mingw64\bin\ranlib.exe libGameLib.a

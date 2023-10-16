@@ -4,7 +4,7 @@ set(DEPENDENCIES
 
         SDL2::Main
         SDL2::TTF
-#        GameLib
+        GameLib
         StartWindowLib
         NewGameWindowLib
         SaveGameWindowLib
@@ -13,6 +13,7 @@ set(DEPENDENCIES
         EscSettingsWindowLib
         CreateHostWindowLib
         EscMenuWindowLib
+	EndGameWindow
         )
 
 add_library(${LIB_NAME} STATIC)
@@ -24,6 +25,7 @@ add_subdirectory(LoadGameWindow)
 add_subdirectory(SettingsWindow)
 add_subdirectory(EscSettingsWindow)
 add_subdirectory(EscMenuWindow)
+add_subdirectory(EndGameWindow)
 add_subdirectory(CreateHostWindow)
 
 target_include_directories(${LIB_NAME} PUBLIC "include")

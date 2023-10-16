@@ -1,4 +1,5 @@
 #pragma once
+#include <SDL.h>
 
 enum class GameDifficulty : uint8_t
 {
@@ -54,3 +55,13 @@ struct Color
     }
 
 };
+
+class Colors
+{
+public:
+    Colors(){};
+       SDL_Color black  { 0, 0, 0, 255 };
+       SDL_Color white  { 255, 255, 255, 255 };
+       SDL_Color red  { 255, 0, 0,255};
+};
+
