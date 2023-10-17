@@ -9,8 +9,11 @@ find_package(SDL2_ttf REQUIRED)
 
 add_subdirectory(Core)
 
+
 add_executable(${PROJECT_NAME} main.cpp
         )
+
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/assets/Caprasimo-Regular.ttf ${CMAKE_CURRENT_BINARY_DIR}/assets/Caprasimo-Regular.ttf COPYONLY)
 
 target_link_libraries(${PROJECT_NAME}
         ${SDL2_LIBRARIES}
